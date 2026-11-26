@@ -1,0 +1,18 @@
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["E501"]
+[tool.mypy]
+python_version = "3.12"
+strict = true
+plugins = ["pydantic.mypy"]
+files = ["app", "music_theory"]
+[[tool.mypy.overrides]]
+module = ["celery.*", "alembic.*"]
+ignore_missing_imports = true
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

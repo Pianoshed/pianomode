@@ -1,0 +1,310 @@
+{
+  "items": [
+    {
+      "id": "notes-and-keyboard",
+      "title": "Notes and the keyboard",
+      "level": "beginner",
+      "summary": "Find any note on the piano and understand sharps, flats and octaves.",
+      "tags": [
+        "notes",
+        "keyboard"
+      ],
+      "prerequisites": [],
+      "unmet_prerequisites": [],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "intervals",
+      "title": "Intervals",
+      "level": "beginner",
+      "summary": "Measure the distance between two notes in semitones and name it.",
+      "tags": [
+        "intervals"
+      ],
+      "prerequisites": [
+        "notes-and-keyboard"
+      ],
+      "unmet_prerequisites": [
+        "notes-and-keyboard"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 2
+    },
+    {
+      "id": "major-scale",
+      "title": "The major scale",
+      "level": "beginner",
+      "summary": "Build any major scale from the pattern of whole and half steps.",
+      "tags": [
+        "scales"
+      ],
+      "prerequisites": [
+        "intervals"
+      ],
+      "unmet_prerequisites": [
+        "intervals"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "key-signatures",
+      "title": "Key signatures",
+      "level": "beginner",
+      "summary": "Read how many sharps or flats a key has, and which ones.",
+      "tags": [
+        "keys"
+      ],
+      "prerequisites": [
+        "major-scale"
+      ],
+      "unmet_prerequisites": [
+        "major-scale"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "triads",
+      "title": "Triads",
+      "level": "beginner",
+      "summary": "Build and recognise major, minor, diminished and augmented triads.",
+      "tags": [
+        "chords",
+        "triads"
+      ],
+      "prerequisites": [
+        "intervals",
+        "major-scale"
+      ],
+      "unmet_prerequisites": [
+        "intervals",
+        "major-scale"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 3
+    },
+    {
+      "id": "inversions",
+      "title": "Chord inversions",
+      "level": "beginner",
+      "summary": "Play the same chord with a different note at the bottom.",
+      "tags": [
+        "chords",
+        "inversions"
+      ],
+      "prerequisites": [
+        "triads"
+      ],
+      "unmet_prerequisites": [
+        "triads"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "seventh-chords",
+      "title": "Seventh chords",
+      "level": "intermediate",
+      "summary": "Add a seventh to a triad and learn the five common seventh chords.",
+      "tags": [
+        "chords",
+        "sevenths"
+      ],
+      "prerequisites": [
+        "triads"
+      ],
+      "unmet_prerequisites": [
+        "triads"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 2
+    },
+    {
+      "id": "diatonic-harmony",
+      "title": "Diatonic harmony and Roman numerals",
+      "level": "intermediate",
+      "summary": "Build a chord on every note of a scale and label it with a Roman numeral.",
+      "tags": [
+        "harmony",
+        "roman numerals"
+      ],
+      "prerequisites": [
+        "major-scale",
+        "triads"
+      ],
+      "unmet_prerequisites": [
+        "major-scale",
+        "triads"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 3
+    },
+    {
+      "id": "progressions",
+      "title": "Chord progressions",
+      "level": "intermediate",
+      "summary": "Recognise the progressions behind a great deal of popular music and jazz.",
+      "tags": [
+        "progressions"
+      ],
+      "prerequisites": [
+        "diatonic-harmony"
+      ],
+      "unmet_prerequisites": [
+        "diatonic-harmony"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "cadences",
+      "title": "Cadences",
+      "level": "intermediate",
+      "summary": "Hear and name the four main ways a phrase can end.",
+      "tags": [
+        "cadences"
+      ],
+      "prerequisites": [
+        "progressions"
+      ],
+      "unmet_prerequisites": [
+        "progressions"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 2
+    },
+    {
+      "id": "voice-leading",
+      "title": "Voice leading",
+      "level": "intermediate",
+      "summary": "Move between chords with the smallest, smoothest steps.",
+      "tags": [
+        "voice leading"
+      ],
+      "prerequisites": [
+        "inversions",
+        "progressions"
+      ],
+      "unmet_prerequisites": [
+        "inversions",
+        "progressions"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "secondary-dominants",
+      "title": "Secondary dominants",
+      "level": "advanced",
+      "summary": "Borrow the dominant of another chord to add pull and colour.",
+      "tags": [
+        "harmony",
+        "secondary dominants"
+      ],
+      "prerequisites": [
+        "progressions",
+        "seventh-chords"
+      ],
+      "unmet_prerequisites": [
+        "progressions",
+        "seventh-chords"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "modal-interchange",
+      "title": "Modal interchange",
+      "level": "advanced",
+      "summary": "Borrow chords from the parallel minor to colour a major key.",
+      "tags": [
+        "harmony",
+        "borrowed chords"
+      ],
+      "prerequisites": [
+        "diatonic-harmony"
+      ],
+      "unmet_prerequisites": [
+        "diatonic-harmony"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "extensions",
+      "title": "Extensions and altered chords",
+      "level": "advanced",
+      "summary": "Add ninths, elevenths and thirteenths, and alter the fifth or ninth.",
+      "tags": [
+        "chords",
+        "extensions"
+      ],
+      "prerequisites": [
+        "seventh-chords"
+      ],
+      "unmet_prerequisites": [
+        "seventh-chords"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "substitution",
+      "title": "Harmonic substitution",
+      "level": "expert",
+      "summary": "Replace a chord with another that does the same job.",
+      "tags": [
+        "jazz",
+        "substitution"
+      ],
+      "prerequisites": [
+        "extensions",
+        "secondary-dominants"
+      ],
+      "unmet_prerequisites": [
+        "extensions",
+        "secondary-dominants"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 1
+    },
+    {
+      "id": "ear-training",
+      "title": "Ear training basics",
+      "level": "beginner",
+      "summary": "Learn to recognise intervals and chord qualities by sound.",
+      "tags": [
+        "ear training"
+      ],
+      "prerequisites": [
+        "intervals",
+        "triads"
+      ],
+      "unmet_prerequisites": [
+        "intervals",
+        "triads"
+      ],
+      "status": "not_started",
+      "goals_met": 0,
+      "goals_total": 2
+    }
+  ],
+  "note": "Status counts practice answers only: 'practised' means every practice goal was met with distinct exercises answered correctly. It is not a measure of understanding."
+}

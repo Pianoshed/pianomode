@@ -1,0 +1,1146 @@
+{
+ "schema_version": 1,
+ "lessons": [
+  {
+   "id": "notes-and-keyboard",
+   "title": "Notes and the keyboard",
+   "level": "beginner",
+   "summary": "Find any note on the piano and understand sharps, flats and octaves.",
+   "objectives": [
+    "Name the white and black keys.",
+    "Explain why one key can have two names (C-sharp and D-flat).",
+    "Say which key is middle C and how octaves are numbered."
+   ],
+   "prerequisites": [],
+   "sections": [
+    {
+     "heading": "Twelve notes that repeat",
+     "body": [
+      "Piano keys repeat in a pattern of twelve: seven white keys and five black keys. After twelve steps you reach the same letter name again, one octave higher.",
+      "The black keys come in groups of two and three. The white key just to the left of a group of two black keys is C. Once you can spot that, you can find every other note from it."
+     ],
+     "examples": [
+      {
+       "type": "scale",
+       "root": "C",
+       "scale": "chromatic",
+       "caption": "All twelve notes from C, one step at a time. Each step is a semitone, the smallest step on the piano.",
+       "octave": 4
+      }
+     ]
+    },
+    {
+     "heading": "Sharps, flats and octave numbers",
+     "body": [
+      "A sharp raises a note by one semitone and a flat lowers it by one. The black key between C and D is C-sharp when you come up from C and D-flat when you come down from D. These are enharmonic names: one key, two spellings.",
+      "Octaves are numbered, and middle C is C4 (MIDI note 60). The A above middle C is A4, which is tuned to 440 Hz by default."
+     ],
+     "examples": [
+      {
+       "type": "interval",
+       "lower": "E4",
+       "upper": "F4",
+       "caption": "E to F is a semitone even though there is no black key between them."
+      },
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "C5",
+       "caption": "The same letter name one octave higher."
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "note_name",
+     "difficulty": "beginner",
+     "goal": 5
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "notes",
+    "keyboard"
+   ]
+  },
+  {
+   "id": "intervals",
+   "title": "Intervals",
+   "level": "beginner",
+   "summary": "Measure the distance between two notes in semitones and name it.",
+   "objectives": [
+    "Count the semitones in an interval.",
+    "Name common intervals: major and minor thirds, perfect fourths and fifths, octaves.",
+    "Build an interval above a given note."
+   ],
+   "prerequisites": [
+    "notes-and-keyboard"
+   ],
+   "sections": [
+    {
+     "heading": "Counting steps",
+     "body": [
+      "An interval is the distance between two notes. Its size is counted in semitones, and its name has two parts: a number (how many letter names it spans) and a quality (major, minor, perfect, augmented or diminished).",
+      "A minor third is three semitones and a major third is four. A perfect fourth is five and a perfect fifth is seven. A perfect octave is twelve."
+     ],
+     "examples": [
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "Eb4",
+       "caption": "A minor third: three semitones."
+      },
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "E4",
+       "caption": "A major third: four semitones."
+      },
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "F4",
+       "caption": "A perfect fourth: five semitones."
+      },
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "G4",
+       "caption": "A perfect fifth: seven semitones."
+      }
+     ]
+    },
+    {
+     "heading": "The tritone",
+     "body": [
+      "Six semitones, exactly half an octave, is called a tritone. It is spelled as an augmented fourth or a diminished fifth depending on context, and it sounds unstable, which is why it matters in dominant chords."
+     ],
+     "examples": [
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "F#4",
+       "caption": "Six semitones between C and F-sharp."
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "interval_identify",
+     "difficulty": "beginner",
+     "goal": 4
+    },
+    {
+     "kind": "interval_build",
+     "difficulty": "beginner",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "intervals"
+   ]
+  },
+  {
+   "id": "major-scale",
+   "title": "The major scale",
+   "level": "beginner",
+   "summary": "Build any major scale from the pattern of whole and half steps.",
+   "objectives": [
+    "Recall the major-scale pattern.",
+    "Spell a major scale starting on any note.",
+    "Explain why some scales need sharps or flats."
+   ],
+   "prerequisites": [
+    "intervals"
+   ],
+   "sections": [
+    {
+     "heading": "One pattern, twelve starting points",
+     "body": [
+      "A major scale follows the same pattern from any starting note: whole step, whole step, half step, whole step, whole step, whole step, half step. A whole step is two semitones and a half step is one.",
+      "Because the pattern is fixed, scales that start on other notes need sharps or flats to keep it."
+     ],
+     "examples": [
+      {
+       "type": "scale",
+       "root": "C",
+       "scale": "major",
+       "caption": "C major uses only white keys.",
+       "octave": 4
+      },
+      {
+       "type": "scale",
+       "root": "G",
+       "scale": "major",
+       "caption": "G major needs one sharp: F-sharp.",
+       "octave": 4
+      },
+      {
+       "type": "scale",
+       "root": "F",
+       "scale": "major",
+       "caption": "F major needs one flat: B-flat.",
+       "octave": 4
+      }
+     ]
+    },
+    {
+     "heading": "Scale degrees",
+     "body": [
+      "Each note of a scale is a degree, numbered one to seven from the starting note, which is the tonic. Degrees are the basis of chord names and Roman numerals later on."
+     ],
+     "examples": []
+    }
+   ],
+   "practice": [
+    {
+     "kind": "scale_construct",
+     "difficulty": "beginner",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "scales"
+   ]
+  },
+  {
+   "id": "key-signatures",
+   "title": "Key signatures",
+   "level": "beginner",
+   "summary": "Read how many sharps or flats a key has, and which ones.",
+   "objectives": [
+    "Recall the order of sharps and the order of flats.",
+    "State the key signature of a major key.",
+    "Explain why a key signature saves writing accidentals."
+   ],
+   "prerequisites": [
+    "major-scale"
+   ],
+   "sections": [
+    {
+     "heading": "Sharps and flats written once",
+     "body": [
+      "A key signature lists the sharps or flats a key uses so they do not need to be marked on every note. Sharps are added in the order F, C, G, D, A, E, B. Flats are added in the order B, E, A, D, G, C, F.",
+      "Each step around the circle of fifths adds one sharp (going up a fifth) or one flat (going down a fifth). C major has none, G major has one sharp, D major has two."
+     ],
+     "examples": [
+      {
+       "type": "scale",
+       "root": "D",
+       "scale": "major",
+       "caption": "D major: F-sharp and C-sharp.",
+       "octave": 4
+      },
+      {
+       "type": "scale",
+       "root": "Bb",
+       "scale": "major",
+       "caption": "B-flat major: B-flat and E-flat.",
+       "octave": 4
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "key_signature",
+     "difficulty": "beginner",
+     "goal": 4
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "keys"
+   ]
+  },
+  {
+   "id": "triads",
+   "title": "Triads",
+   "level": "beginner",
+   "summary": "Build and recognise major, minor, diminished and augmented triads.",
+   "objectives": [
+    "Build a triad from stacked thirds.",
+    "Tell the four triad qualities apart by their intervals.",
+    "Hear the difference between major and minor."
+   ],
+   "prerequisites": [
+    "intervals",
+    "major-scale"
+   ],
+   "sections": [
+    {
+     "heading": "Three notes, stacked in thirds",
+     "body": [
+      "A triad is a root, a third above it and a fifth above it. What changes the sound is whether the thirds are major or minor.",
+      "A major triad is a major third plus a minor third. A minor triad is a minor third plus a major third."
+     ],
+     "examples": [
+      {
+       "type": "chord",
+       "symbol": "C",
+       "caption": "C major: C, E, G.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "Cm",
+       "caption": "C minor: the third is lowered by a semitone.",
+       "octave": 4
+      }
+     ]
+    },
+    {
+     "heading": "Diminished and augmented",
+     "body": [
+      "A diminished triad stacks two minor thirds, giving a tense, closed sound. An augmented triad stacks two major thirds, giving an open, unresolved sound."
+     ],
+     "examples": [
+      {
+       "type": "chord",
+       "symbol": "Cdim",
+       "caption": "C diminished: two minor thirds.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "Caug",
+       "caption": "C augmented: two major thirds.",
+       "octave": 4
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "triad_build",
+     "difficulty": "beginner",
+     "goal": 3
+    },
+    {
+     "kind": "triad_identify",
+     "difficulty": "beginner",
+     "goal": 3
+    },
+    {
+     "kind": "ear_chord_quality",
+     "difficulty": "beginner",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "chords",
+    "triads"
+   ]
+  },
+  {
+   "id": "inversions",
+   "title": "Chord inversions",
+   "level": "beginner",
+   "summary": "Play the same chord with a different note at the bottom.",
+   "objectives": [
+    "Define root position, first inversion and second inversion.",
+    "Name the inversion of a triad from its lowest note.",
+    "Read a slash chord such as C/E."
+   ],
+   "prerequisites": [
+    "triads"
+   ],
+   "sections": [
+    {
+     "heading": "Same notes, new bottom",
+     "body": [
+      "In root position the root is the lowest note. In first inversion the third is lowest, and in second inversion the fifth is lowest. The chord is still the same chord; only the order of the notes changes.",
+      "A slash chord names the lowest note after the slash. C/E is a C major chord with E in the bass."
+     ],
+     "examples": [
+      {
+       "type": "chord",
+       "symbol": "C",
+       "caption": "Root position: C at the bottom.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "C/E",
+       "caption": "First inversion: E at the bottom.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "C/G",
+       "caption": "Second inversion: G at the bottom.",
+       "octave": 4
+      }
+     ]
+    },
+    {
+     "heading": "Why use inversions",
+     "body": [
+      "Inversions let you move between chords with small hand movements, because you can choose the order that keeps the notes closest together."
+     ],
+     "examples": []
+    }
+   ],
+   "practice": [
+    {
+     "kind": "inversion_identify",
+     "difficulty": "beginner",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "chords",
+    "inversions"
+   ]
+  },
+  {
+   "id": "seventh-chords",
+   "title": "Seventh chords",
+   "level": "intermediate",
+   "summary": "Add a seventh to a triad and learn the five common seventh chords.",
+   "objectives": [
+    "Name the five common seventh chords.",
+    "Build each one from its intervals.",
+    "Tell a half-diminished chord from a fully diminished one."
+   ],
+   "prerequisites": [
+    "triads"
+   ],
+   "sections": [
+    {
+     "heading": "Adding a fourth note",
+     "body": [
+      "A seventh chord adds the note a seventh above the root. The quality of the triad and the size of the seventh give the chord its name.",
+      "Major seventh: major triad plus a major seventh. Dominant seventh: major triad plus a minor seventh. Minor seventh: minor triad plus a minor seventh."
+     ],
+     "examples": [
+      {
+       "type": "chord",
+       "symbol": "Cmaj7",
+       "caption": "C major seventh: C, E, G, B.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "C7",
+       "caption": "C dominant seventh: C, E, G, B-flat.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "Cm7",
+       "caption": "C minor seventh: C, E-flat, G, B-flat.",
+       "octave": 4
+      }
+     ]
+    },
+    {
+     "heading": "The two diminished sevenths",
+     "body": [
+      "A half-diminished seventh (also written m7b5) is a diminished triad with a minor seventh. A fully diminished seventh stacks only minor thirds, so its top note is a diminished seventh above the root (for C, that note is B double flat).",
+      "Do not mix them up: they differ by one note, the seventh."
+     ],
+     "examples": [
+      {
+       "type": "chord",
+       "symbol": "Cm7b5",
+       "caption": "C half-diminished: C, E-flat, G-flat, B-flat.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "Cdim7",
+       "caption": "C fully diminished: C, E-flat, G-flat, B double flat.",
+       "octave": 4
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "seventh_build",
+     "difficulty": "intermediate",
+     "goal": 3
+    },
+    {
+     "kind": "seventh_identify",
+     "difficulty": "intermediate",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "chords",
+    "sevenths"
+   ]
+  },
+  {
+   "id": "diatonic-harmony",
+   "title": "Diatonic harmony and Roman numerals",
+   "level": "intermediate",
+   "summary": "Build a chord on every note of a scale and label it with a Roman numeral.",
+   "objectives": [
+    "Build the seven diatonic triads of a major key.",
+    "Label chords with Roman numerals.",
+    "Turn a numeral back into a chord in any key."
+   ],
+   "prerequisites": [
+    "major-scale",
+    "triads"
+   ],
+   "sections": [
+    {
+     "heading": "A chord on every degree",
+     "body": [
+      "Stacking thirds on each note of a major scale, using only notes of that scale, gives seven chords: major, minor, minor, major, major, minor, diminished.",
+      "Roman numerals name the chords by degree. Capital numerals are major, lower-case are minor, and a small circle marks diminished: I, ii, iii, IV, V, vi, vii-dim."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "Dm",
+        "Em",
+        "F",
+        "G",
+        "Am",
+        "Bdim"
+       ],
+       "caption": "The seven diatonic triads of C major, with their Roman numerals.",
+       "octave": 4,
+       "key": "C major"
+      }
+     ]
+    },
+    {
+     "heading": "Why numerals",
+     "body": [
+      "A numeral describes the job a chord does in a key, not its letter name. That is why the same progression can be played in any key."
+     ],
+     "examples": []
+    }
+   ],
+   "practice": [
+    {
+     "kind": "diatonic_chord",
+     "difficulty": "intermediate",
+     "goal": 3
+    },
+    {
+     "kind": "roman_numeral",
+     "difficulty": "intermediate",
+     "goal": 3
+    },
+    {
+     "kind": "roman_to_chord",
+     "difficulty": "intermediate",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "harmony",
+    "roman numerals"
+   ]
+  },
+  {
+   "id": "progressions",
+   "title": "Chord progressions",
+   "level": "intermediate",
+   "summary": "Recognise the progressions behind a great deal of popular music and jazz.",
+   "objectives": [
+    "Name common progressions by their Roman numerals.",
+    "Write a progression in any key.",
+    "Explain why ii-V-I works so well."
+   ],
+   "prerequisites": [
+    "diatonic-harmony"
+   ],
+   "sections": [
+    {
+     "heading": "Patterns that repeat",
+     "body": [
+      "A progression is a sequence of chords. Written as numerals it can be played in any key. I-IV-V-I is the basic pop and blues skeleton. I-V-vi-IV is common in pop songs.",
+      "In jazz, ii-V-I is the most important pattern: the ii chord leads to V, which resolves to I."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "F",
+        "G",
+        "C"
+       ],
+       "caption": "I-IV-V-I in C major.",
+       "octave": 4,
+       "key": "C major"
+      },
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "G",
+        "Am",
+        "F"
+       ],
+       "caption": "I-V-vi-IV in C major.",
+       "octave": 4,
+       "key": "C major"
+      },
+      {
+       "type": "sequence",
+       "chords": [
+        "Dm7",
+        "G7",
+        "Cmaj7"
+       ],
+       "caption": "ii-V-I with seventh chords in C major.",
+       "octave": 4,
+       "key": "C major"
+      }
+     ]
+    },
+    {
+     "heading": "Try it with both hands",
+     "body": [
+      "The Chord Progressions page has these patterns at four levels, from simple triads to voiced jazz chords, so you can play and compare them."
+     ],
+     "examples": []
+    }
+   ],
+   "practice": [
+    {
+     "kind": "progression_build",
+     "difficulty": "intermediate",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "progressions"
+   ],
+   "movement_template": "ii_v_i"
+  },
+  {
+   "id": "cadences",
+   "title": "Cadences",
+   "level": "intermediate",
+   "summary": "Hear and name the four main ways a phrase can end.",
+   "objectives": [
+    "Name the authentic, plagal, half and deceptive cadences.",
+    "Say which chords make up each one.",
+    "Hear the difference between a firm and an unfinished ending."
+   ],
+   "prerequisites": [
+    "progressions"
+   ],
+   "sections": [
+    {
+     "heading": "Musical punctuation",
+     "body": [
+      "A cadence is the chord pair that ends a phrase. An authentic cadence is V to I and sounds finished. A plagal cadence is IV to I, the gentle 'amen' ending."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "G",
+        "C"
+       ],
+       "caption": "Authentic cadence in C major: V to I.",
+       "octave": 4,
+       "key": "C major"
+      },
+      {
+       "type": "sequence",
+       "chords": [
+        "F",
+        "C"
+       ],
+       "caption": "Plagal cadence in C major: IV to I.",
+       "octave": 4,
+       "key": "C major"
+      }
+     ]
+    },
+    {
+     "heading": "Unfinished endings",
+     "body": [
+      "A half cadence stops on V and feels like a comma. A deceptive cadence goes from V to vi instead of I, which sounds like a surprise."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "G"
+       ],
+       "caption": "A half cadence ends on V.",
+       "octave": 4,
+       "key": "C major"
+      },
+      {
+       "type": "sequence",
+       "chords": [
+        "G",
+        "Am"
+       ],
+       "caption": "Deceptive cadence: V to vi.",
+       "octave": 4,
+       "key": "C major"
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "cadence_identify",
+     "difficulty": "intermediate",
+     "goal": 3
+    },
+    {
+     "kind": "ear_cadence",
+     "difficulty": "intermediate",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "cadences"
+   ]
+  },
+  {
+   "id": "voice-leading",
+   "title": "Voice leading",
+   "level": "intermediate",
+   "summary": "Move between chords with the smallest, smoothest steps.",
+   "objectives": [
+    "Find the notes two chords share.",
+    "Choose the inversion that moves least.",
+    "Explain why smooth movement sounds connected."
+   ],
+   "prerequisites": [
+    "inversions",
+    "progressions"
+   ],
+   "sections": [
+    {
+     "heading": "Keep what you can, move the rest by step",
+     "body": [
+      "Voice leading is how each note of one chord moves to a note of the next. Smooth voice leading keeps the notes the two chords share and moves the others by the smallest step.",
+      "C major and A minor share two notes, C and E, so only one note has to move."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "Am/C"
+       ],
+       "caption": "C to A minor with A minor in first inversion: C and E stay where they are and only G moves up a step to A.",
+       "octave": 4,
+       "octaves": [
+        4,
+        3
+       ],
+       "key": "C major"
+      }
+     ]
+    },
+    {
+     "heading": "Let inversions do the work",
+     "body": [
+      "Instead of jumping the whole hand to a new root-position chord, choose the inversion closest to where your hand already is."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "G/B",
+        "Am/C",
+        "F/C"
+       ],
+       "caption": "A line of chords with a bass that moves by step or stays: C, G over B, A minor over C, F over C.",
+       "octave": 4,
+       "octaves": [
+        4,
+        3,
+        3,
+        3
+       ]
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "voice_leading_choice",
+     "difficulty": "intermediate",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "voice leading"
+   ],
+   "movement_template": "ii_v_i"
+  },
+  {
+   "id": "secondary-dominants",
+   "title": "Secondary dominants",
+   "level": "advanced",
+   "summary": "Borrow the dominant of another chord to add pull and colour.",
+   "objectives": [
+    "Explain what V7/V means.",
+    "Spell the secondary dominant of any diatonic chord.",
+    "Hear how it leads into its target."
+   ],
+   "prerequisites": [
+    "progressions",
+    "seventh-chords"
+   ],
+   "sections": [
+    {
+     "heading": "A dominant of something other than I",
+     "body": [
+      "Any diatonic major or minor chord can be preceded by its own dominant seventh, which makes a brief, temporary tonic of that chord. V7/V means the dominant seventh of V.",
+      "In C major, the dominant of G is D7, which brings in an F-sharp that is not in the key. The Roman numeral V7/V tells you that."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "D7",
+        "G"
+       ],
+       "caption": "I, V7/V, V in C major.",
+       "octave": 4,
+       "key": "C major"
+      },
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "E7",
+        "Am"
+       ],
+       "caption": "I, V7/vi, vi in C major.",
+       "octave": 4,
+       "key": "C major"
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "secondary_dominant",
+     "difficulty": "advanced",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "harmony",
+    "secondary dominants"
+   ]
+  },
+  {
+   "id": "modal-interchange",
+   "title": "Modal interchange",
+   "level": "advanced",
+   "summary": "Borrow chords from the parallel minor to colour a major key.",
+   "objectives": [
+    "Define modal interchange (borrowed chords).",
+    "Name the common borrowed chords: iv, bVI and bVII.",
+    "Spell them in any major key."
+   ],
+   "prerequisites": [
+    "diatonic-harmony"
+   ],
+   "sections": [
+    {
+     "heading": "Chords from the minor key with the same tonic",
+     "body": [
+      "A major key and its parallel minor share a tonic, for example C major and C minor. Borrowing a chord from the minor key brings a darker colour into a major progression.",
+      "The most common borrowed chords in major are the minor iv, the flat VI and the flat VII."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "Fm",
+        "C"
+       ],
+       "caption": "The minor iv borrowed into C major.",
+       "octave": 4,
+       "key": "C major"
+      },
+      {
+       "type": "sequence",
+       "chords": [
+        "C",
+        "Ab",
+        "Bb",
+        "C"
+       ],
+       "caption": "Flat VI and flat VII borrowed into C major.",
+       "octave": 4,
+       "key": "C major"
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "modal_interchange",
+     "difficulty": "advanced",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "harmony",
+    "borrowed chords"
+   ]
+  },
+  {
+   "id": "extensions",
+   "title": "Extensions and altered chords",
+   "level": "advanced",
+   "summary": "Add ninths, elevenths and thirteenths, and alter the fifth or ninth.",
+   "objectives": [
+    "Explain how a ninth, eleventh or thirteenth is built.",
+    "Read symbols such as C9, Cmaj9 and C13.",
+    "Name common altered dominant chords."
+   ],
+   "prerequisites": [
+    "seventh-chords"
+   ],
+   "sections": [
+    {
+     "heading": "Stacking further thirds",
+     "body": [
+      "Continuing to stack thirds above a seventh chord gives the ninth, the eleventh and the thirteenth. The ninth is the same note as the second degree, an octave higher.",
+      "A chord symbol with a ninth or thirteenth normally includes the seventh below it."
+     ],
+     "examples": [
+      {
+       "type": "chord",
+       "symbol": "C9",
+       "caption": "C dominant ninth.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "Cmaj9",
+       "caption": "C major ninth.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "Cm9",
+       "caption": "C minor ninth.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "C13",
+       "caption": "C dominant thirteenth.",
+       "octave": 4
+      }
+     ]
+    },
+    {
+     "heading": "Altered dominants",
+     "body": [
+      "Dominant chords can have a raised or lowered ninth or fifth. These altered tones add tension that wants to resolve."
+     ],
+     "examples": [
+      {
+       "type": "chord",
+       "symbol": "C7b9",
+       "caption": "C dominant seventh with a flat ninth.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "C7#9",
+       "caption": "C dominant seventh with a sharp ninth.",
+       "octave": 4
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "extension_identify",
+     "difficulty": "advanced",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "chords",
+    "extensions"
+   ]
+  },
+  {
+   "id": "substitution",
+   "title": "Harmonic substitution",
+   "level": "expert",
+   "summary": "Replace a chord with another that does the same job.",
+   "objectives": [
+    "Explain the tritone substitution.",
+    "Spell the tritone substitute of a dominant seventh.",
+    "Hear how it changes the bass line."
+   ],
+   "prerequisites": [
+    "extensions",
+    "secondary-dominants"
+   ],
+   "sections": [
+    {
+     "heading": "Two dominants that share a tritone",
+     "body": [
+      "A dominant seventh contains a tritone between its third and seventh. The dominant seventh chord whose root is a tritone away contains the same two notes, swapped. So the two chords can replace each other.",
+      "G7 contains B and F. D-flat 7 contains F and C-flat, which is the same pitch as B. In a ii-V-I the bass then moves down by semitone."
+     ],
+     "examples": [
+      {
+       "type": "sequence",
+       "chords": [
+        "Dm7",
+        "G7",
+        "Cmaj7"
+       ],
+       "caption": "ii-V-I as written.",
+       "octave": 4,
+       "key": "C major"
+      },
+      {
+       "type": "sequence",
+       "chords": [
+        "Dm7",
+        "Db7",
+        "Cmaj7"
+       ],
+       "caption": "The same, with the tritone substitute for V.",
+       "octave": 4,
+       "key": "C major"
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "substitution",
+     "difficulty": "expert",
+     "goal": 3
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "jazz",
+    "substitution"
+   ],
+   "movement_template": "ii_v_i"
+  },
+  {
+   "id": "ear-training",
+   "title": "Ear training basics",
+   "level": "beginner",
+   "summary": "Learn to recognise intervals and chord qualities by sound.",
+   "objectives": [
+    "Recognise common intervals by their sound.",
+    "Tell major from minor by ear.",
+    "Use the keyboard to check what you heard."
+   ],
+   "prerequisites": [
+    "intervals",
+    "triads"
+   ],
+   "sections": [
+    {
+     "heading": "Hearing the distance",
+     "body": [
+      "Every interval has a sound of its own. A perfect fifth sounds open and stable. A major third sounds bright and a minor third sounds darker. Tying each interval to a tune you know helps you recall it.",
+      "Play the examples, then close your eyes and say what you heard before checking."
+     ],
+     "examples": [
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "G4",
+       "caption": "A perfect fifth."
+      },
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "E4",
+       "caption": "A major third."
+      },
+      {
+       "type": "interval",
+       "lower": "C4",
+       "upper": "Eb4",
+       "caption": "A minor third."
+      }
+     ]
+    },
+    {
+     "heading": "Chord colour",
+     "body": [
+      "Major chords sound bright and minor chords sound darker. Diminished chords sound tense. Practise hearing these before naming them."
+     ],
+     "examples": [
+      {
+       "type": "chord",
+       "symbol": "C",
+       "caption": "Major.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "Cm",
+       "caption": "Minor.",
+       "octave": 4
+      },
+      {
+       "type": "chord",
+       "symbol": "Cdim",
+       "caption": "Diminished.",
+       "octave": 4
+      }
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "kind": "ear_interval",
+     "difficulty": "beginner",
+     "goal": 5
+    },
+    {
+     "kind": "ear_chord_quality",
+     "difficulty": "beginner",
+     "goal": 5
+    }
+   ],
+   "revision": 1,
+   "tags": [
+    "ear training"
+   ]
+  }
+ ]
+}

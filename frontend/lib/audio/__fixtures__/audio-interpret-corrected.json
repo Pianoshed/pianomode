@@ -1,0 +1,414 @@
+{
+  "hypotheses": [
+    {
+      "origin": "audio",
+      "start": 0.0,
+      "end": 2.0,
+      "status": "ambiguous",
+      "symbol": "C",
+      "raw_label": "C:maj",
+      "alternatives": [
+        {
+          "label": "C:maj7",
+          "symbol": "Cmaj7",
+          "source": "model",
+          "model_score": 0.91
+        },
+        {
+          "label": "A:min7",
+          "symbol": "Am7",
+          "source": "model",
+          "model_score": 0.7
+        }
+      ],
+      "model_score": 0.93,
+      "confidence": null,
+      "calibration": null,
+      "bass": "C",
+      "pitch_classes": [
+        0,
+        4,
+        7
+      ],
+      "numeral": {
+        "symbol": "C",
+        "figure": "V",
+        "degree": 5,
+        "category": "diatonic",
+        "function": "dominant",
+        "applied_to": null,
+        "borrowed_from": null,
+        "inversion": 0,
+        "note": null,
+        "alternatives": []
+      },
+      "warnings": [
+        "Close competing label 'C:maj7'; the raw scores are nearly equal."
+      ]
+    },
+    {
+      "origin": "user",
+      "start": 2.0,
+      "end": 4.0,
+      "status": "user_set",
+      "symbol": "Am7",
+      "raw_label": "Am7",
+      "alternatives": [],
+      "model_score": null,
+      "confidence": null,
+      "calibration": null,
+      "bass": null,
+      "pitch_classes": null,
+      "numeral": {
+        "symbol": "Am7",
+        "figure": "iii7",
+        "degree": 3,
+        "category": "diatonic",
+        "function": "tonic",
+        "applied_to": null,
+        "borrowed_from": null,
+        "inversion": 0,
+        "note": null,
+        "alternatives": []
+      },
+      "warnings": []
+    },
+    {
+      "origin": "audio",
+      "start": 4.0,
+      "end": 6.0,
+      "status": "no_chord",
+      "symbol": null,
+      "raw_label": "N",
+      "alternatives": [],
+      "model_score": null,
+      "confidence": null,
+      "calibration": null,
+      "bass": null,
+      "pitch_classes": null,
+      "numeral": null,
+      "warnings": []
+    },
+    {
+      "origin": "audio",
+      "start": 6.0,
+      "end": 8.0,
+      "status": "estimated",
+      "symbol": "F",
+      "raw_label": "F:maj",
+      "alternatives": [],
+      "model_score": 0.9,
+      "confidence": null,
+      "calibration": null,
+      "bass": "F",
+      "pitch_classes": [
+        0,
+        5,
+        9
+      ],
+      "numeral": {
+        "symbol": "F",
+        "figure": "I",
+        "degree": 1,
+        "category": "diatonic",
+        "function": "tonic",
+        "applied_to": null,
+        "borrowed_from": null,
+        "inversion": 0,
+        "note": null,
+        "alternatives": []
+      },
+      "warnings": []
+    }
+  ],
+  "original": [
+    {
+      "origin": "audio",
+      "start": 0.0,
+      "end": 2.0,
+      "status": "ambiguous",
+      "symbol": "C",
+      "raw_label": "C:maj",
+      "alternatives": [
+        {
+          "label": "C:maj7",
+          "symbol": "Cmaj7",
+          "source": "model",
+          "model_score": 0.91
+        },
+        {
+          "label": "A:min7",
+          "symbol": "Am7",
+          "source": "model",
+          "model_score": 0.7
+        }
+      ],
+      "model_score": 0.93,
+      "confidence": null,
+      "calibration": null,
+      "bass": "C",
+      "pitch_classes": [
+        0,
+        4,
+        7
+      ],
+      "numeral": {
+        "symbol": "C",
+        "figure": "V",
+        "degree": 5,
+        "category": "diatonic",
+        "function": "dominant",
+        "applied_to": null,
+        "borrowed_from": null,
+        "inversion": 0,
+        "note": null,
+        "alternatives": []
+      },
+      "warnings": [
+        "Close competing label 'C:maj7'; the raw scores are nearly equal."
+      ]
+    },
+    {
+      "origin": "audio",
+      "start": 2.0,
+      "end": 4.0,
+      "status": "estimated",
+      "symbol": "Am",
+      "raw_label": "A:min",
+      "alternatives": [
+        {
+          "label": "C:maj",
+          "symbol": "C",
+          "source": "model",
+          "model_score": 0.72
+        }
+      ],
+      "model_score": 0.95,
+      "confidence": null,
+      "calibration": null,
+      "bass": "A",
+      "pitch_classes": [
+        0,
+        4,
+        9
+      ],
+      "numeral": {
+        "symbol": "Am",
+        "figure": "iii",
+        "degree": 3,
+        "category": "diatonic",
+        "function": "tonic",
+        "applied_to": null,
+        "borrowed_from": null,
+        "inversion": 0,
+        "note": null,
+        "alternatives": []
+      },
+      "warnings": []
+    },
+    {
+      "origin": "audio",
+      "start": 4.0,
+      "end": 6.0,
+      "status": "no_chord",
+      "symbol": null,
+      "raw_label": "N",
+      "alternatives": [],
+      "model_score": null,
+      "confidence": null,
+      "calibration": null,
+      "bass": null,
+      "pitch_classes": null,
+      "numeral": null,
+      "warnings": []
+    },
+    {
+      "origin": "audio",
+      "start": 6.0,
+      "end": 8.0,
+      "status": "estimated",
+      "symbol": "F",
+      "raw_label": "F:maj",
+      "alternatives": [],
+      "model_score": 0.9,
+      "confidence": null,
+      "calibration": null,
+      "bass": "F",
+      "pitch_classes": [
+        0,
+        5,
+        9
+      ],
+      "numeral": {
+        "symbol": "F",
+        "figure": "I",
+        "degree": 1,
+        "category": "diatonic",
+        "function": "tonic",
+        "applied_to": null,
+        "borrowed_from": null,
+        "inversion": 0,
+        "note": null,
+        "alternatives": []
+      },
+      "warnings": []
+    }
+  ],
+  "corrections": [
+    {
+      "kind": "relabel",
+      "index": 1,
+      "before": {
+        "origin": "audio",
+        "start": 2.0,
+        "end": 4.0,
+        "status": "estimated",
+        "symbol": "Am",
+        "raw_label": "A:min",
+        "alternatives": [
+          {
+            "label": "C:maj",
+            "symbol": "C",
+            "source": "model",
+            "model_score": 0.72
+          }
+        ],
+        "model_score": 0.95,
+        "confidence": null,
+        "calibration": null,
+        "bass": "A",
+        "pitch_classes": [
+          0,
+          4,
+          9
+        ],
+        "numeral": {
+          "symbol": "Am",
+          "figure": "iii",
+          "degree": 3,
+          "category": "diatonic",
+          "function": "tonic",
+          "applied_to": null,
+          "borrowed_from": null,
+          "inversion": 0,
+          "note": null,
+          "alternatives": []
+        },
+        "warnings": []
+      },
+      "after": {
+        "origin": "user",
+        "start": 2.0,
+        "end": 4.0,
+        "status": "user_set",
+        "symbol": "Am7",
+        "raw_label": "Am7",
+        "alternatives": [],
+        "model_score": null,
+        "confidence": null,
+        "calibration": null,
+        "bass": null,
+        "pitch_classes": null,
+        "numeral": {
+          "symbol": "Am7",
+          "figure": "iii7",
+          "degree": 3,
+          "category": "diatonic",
+          "function": "tonic",
+          "applied_to": null,
+          "borrowed_from": null,
+          "inversion": 0,
+          "note": null,
+          "alternatives": []
+        },
+        "warnings": []
+      }
+    }
+  ],
+  "key": {
+    "tonic": "F",
+    "mode": "major",
+    "name": "F major",
+    "signature": "1 flat (Bb)",
+    "fifths": -1,
+    "relative": "D minor",
+    "parallel": "F minor"
+  },
+  "key_source": "estimated",
+  "key_estimate": {
+    "candidates": [
+      {
+        "key": {
+          "tonic": "F",
+          "mode": "major",
+          "name": "F major",
+          "signature": "1 flat (Bb)",
+          "fifths": -1,
+          "relative": "D minor",
+          "parallel": "F minor"
+        },
+        "score": 1.2185
+      },
+      {
+        "key": {
+          "tonic": "C",
+          "mode": "major",
+          "name": "C major",
+          "signature": "no sharps or flats",
+          "fifths": 0,
+          "relative": "A minor",
+          "parallel": "C minor"
+        },
+        "score": 1.1815
+      },
+      {
+        "key": {
+          "tonic": "A",
+          "mode": "minor",
+          "name": "A minor",
+          "signature": "no sharps or flats",
+          "fifths": 0,
+          "relative": "C major",
+          "parallel": "A major"
+        },
+        "score": 1.0895
+      },
+      {
+        "key": {
+          "tonic": "D",
+          "mode": "minor",
+          "name": "D minor",
+          "signature": "1 flat (Bb)",
+          "fifths": -1,
+          "relative": "F major",
+          "parallel": "D major"
+        },
+        "score": 1.0236
+      },
+      {
+        "key": {
+          "tonic": "E",
+          "mode": "minor",
+          "name": "E minor",
+          "signature": "1 sharp (F#)",
+          "fifths": 1,
+          "relative": "G major",
+          "parallel": "E major"
+        },
+        "score": 0.6954
+      }
+    ],
+    "reliable": true,
+    "ambiguous": true,
+    "warnings": [
+      "Chord-only analysis cannot fully separate a key from its relative key.",
+      "Several keys fit almost equally well."
+    ],
+    "method": "diatonic-fit",
+    "score_meaning": "Scores rank keys against each other; they are not probabilities."
+  },
+  "warnings": [
+    "The key is uncertain (F major is one of several close fits); numerals are relative to it."
+  ],
+  "evidence_note": "These chords are estimates from audio, not known pitches. Scores are raw model output and are not probabilities unless a named calibration is shown."
+}

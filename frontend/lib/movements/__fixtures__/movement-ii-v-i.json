@@ -1,0 +1,1095 @@
+{
+  "movement": {
+    "schema_version": 1,
+    "generator_version": 1,
+    "slug": "ii-v-i",
+    "name": "ii-V-I",
+    "key": {
+      "tonic": "C",
+      "mode": "major"
+    },
+    "tempo": 80,
+    "time_signature": [
+      4,
+      4
+    ],
+    "tags": [
+      "jazz"
+    ],
+    "author": "Keystudy",
+    "source": null,
+    "template_id": "ii_v_i",
+    "transposition_options": [
+      "C",
+      "Db",
+      "D",
+      "Eb",
+      "E",
+      "F",
+      "F#",
+      "G",
+      "Ab",
+      "A",
+      "Bb",
+      "B"
+    ],
+    "versions": [
+      {
+        "level": "beginner",
+        "voicing_type": "Left hand plays the bass note; right hand plays a close triad, root position where it fits.",
+        "theory_explanation": "ii leads to V, which resolves to I.",
+        "practice": "Play ii-V-I one chord at a time, hands together, saying each chord name aloud.",
+        "variations": [
+          "When this feels easy, move to the intermediate version.",
+          "Play it in a new key; the transposition options list every key.",
+          "Try each chord in a different inversion, keeping the notes close together."
+        ],
+        "total_cost": 16.785,
+        "method": "dp",
+        "warnings": [],
+        "validation_errors": [],
+        "validation_warnings": [],
+        "tempo": 80,
+        "time_signature": [
+          4,
+          4
+        ],
+        "total_beats": 16.0,
+        "steps": [
+          {
+            "index": 0,
+            "symbol": "Dm",
+            "roman": "ii",
+            "beat": 0.0,
+            "duration": 4.0,
+            "role": "main",
+            "chord_tones": [
+              "D",
+              "F",
+              "A"
+            ],
+            "bass": "D",
+            "inversion": "root position",
+            "left": [
+              50
+            ],
+            "right": [
+              62,
+              65,
+              69
+            ],
+            "left_names": [
+              "D"
+            ],
+            "right_names": [
+              "D",
+              "F",
+              "A"
+            ],
+            "voicing_type": "bass + triad close",
+            "omitted": [],
+            "tensions": [],
+            "explanation": [
+              "Dm: LH bass note (D3); RH close triad, root position (D4 F4 A4)."
+            ],
+            "cost": 0.521
+          },
+          {
+            "index": 1,
+            "symbol": "G",
+            "roman": "V",
+            "beat": 4.0,
+            "duration": 4.0,
+            "role": "main",
+            "chord_tones": [
+              "G",
+              "B",
+              "D"
+            ],
+            "bass": "G",
+            "inversion": "root position",
+            "left": [
+              43,
+              50
+            ],
+            "right": [
+              59,
+              62,
+              67
+            ],
+            "left_names": [
+              "G",
+              "D"
+            ],
+            "right_names": [
+              "B",
+              "D",
+              "G"
+            ],
+            "voicing_type": "root fifth + triad close",
+            "omitted": [],
+            "tensions": [],
+            "explanation": [
+              "G: LH root and fifth (G2 D3); RH close triad, first inversion (B3 D4 G4).",
+              "Moves 12 semitones in total (largest single move 3); holds 2 note(s); bass moves 7."
+            ],
+            "cost": 11.248
+          },
+          {
+            "index": 2,
+            "symbol": "C",
+            "roman": "I",
+            "beat": 8.0,
+            "duration": 8.0,
+            "role": "main",
+            "chord_tones": [
+              "C",
+              "E",
+              "G"
+            ],
+            "bass": "C",
+            "inversion": "root position",
+            "left": [
+              48
+            ],
+            "right": [
+              60,
+              64,
+              67
+            ],
+            "left_names": [
+              "C"
+            ],
+            "right_names": [
+              "C",
+              "E",
+              "G"
+            ],
+            "voicing_type": "bass + triad close",
+            "omitted": [],
+            "tensions": [],
+            "explanation": [
+              "C: LH bass note (C3); RH close triad, root position (C4 E4 G4).",
+              "Moves 9 semitones in total (largest single move 2); holds 1 note(s); bass moves 5."
+            ],
+            "cost": 5.017
+          }
+        ],
+        "playback": [
+          {
+            "midi": 50,
+            "hand": "L",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 62,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 65,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 69,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 43,
+            "hand": "L",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 50,
+            "hand": "L",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 59,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 62,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 67,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 48,
+            "hand": "L",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 60,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 64,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 67,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          }
+        ]
+      },
+      {
+        "level": "intermediate",
+        "voicing_type": "Seventh chords with octave or root-and-fifth bass and basic inversions on the right.",
+        "theory_explanation": "ii leads to V, which resolves to I.",
+        "practice": "Play ii-V-I with seventh chords; keep the hand shape and slide to the nearest inversion rather than jumping.",
+        "variations": [
+          "When this feels easy, move to the advanced version.",
+          "Play it in a new key; the transposition options list every key.",
+          "Try each chord in a different inversion, keeping the notes close together."
+        ],
+        "total_cost": 15.128,
+        "method": "dp",
+        "warnings": [],
+        "validation_errors": [],
+        "validation_warnings": [],
+        "tempo": 80,
+        "time_signature": [
+          4,
+          4
+        ],
+        "total_beats": 16.0,
+        "steps": [
+          {
+            "index": 0,
+            "symbol": "Dm7",
+            "roman": "ii7",
+            "beat": 0.0,
+            "duration": 4.0,
+            "role": "main",
+            "chord_tones": [
+              "D",
+              "F",
+              "A",
+              "C"
+            ],
+            "bass": "D",
+            "inversion": "root position",
+            "left": [
+              50
+            ],
+            "right": [
+              65,
+              69,
+              72,
+              74
+            ],
+            "left_names": [
+              "D"
+            ],
+            "right_names": [
+              "F",
+              "A",
+              "C",
+              "D"
+            ],
+            "voicing_type": "bass + seventh close",
+            "omitted": [],
+            "tensions": [],
+            "explanation": [
+              "Dm7: LH bass note (D3); RH close seventh chord, first inversion (F4 A4 C5 D5)."
+            ],
+            "cost": 0.619
+          },
+          {
+            "index": 1,
+            "symbol": "G7",
+            "roman": "V7",
+            "beat": 4.0,
+            "duration": 4.0,
+            "role": "main",
+            "chord_tones": [
+              "G",
+              "B",
+              "D",
+              "F"
+            ],
+            "bass": "G",
+            "inversion": "root position",
+            "left": [
+              43,
+              50
+            ],
+            "right": [
+              65,
+              67,
+              71,
+              74
+            ],
+            "left_names": [
+              "G",
+              "D"
+            ],
+            "right_names": [
+              "F",
+              "G",
+              "B",
+              "D"
+            ],
+            "voicing_type": "root fifth + seventh close",
+            "omitted": [],
+            "tensions": [],
+            "explanation": [
+              "G7: LH root and fifth (G2 D3); RH close seventh chord, third inversion (F4 G4 B4 D5).",
+              "Moves 7 semitones in total (largest single move 2); holds 3 note(s); bass moves 7."
+            ],
+            "cost": 5.309
+          },
+          {
+            "index": 2,
+            "symbol": "Cmaj7",
+            "roman": "Imaj7",
+            "beat": 8.0,
+            "duration": 8.0,
+            "role": "main",
+            "chord_tones": [
+              "C",
+              "E",
+              "G",
+              "B"
+            ],
+            "bass": "C",
+            "inversion": "root position",
+            "left": [
+              48
+            ],
+            "right": [
+              64,
+              67,
+              71,
+              72
+            ],
+            "left_names": [
+              "C"
+            ],
+            "right_names": [
+              "E",
+              "G",
+              "B",
+              "C"
+            ],
+            "voicing_type": "bass + seventh close",
+            "omitted": [],
+            "tensions": [],
+            "explanation": [
+              "Cmaj7: LH bass note (C3); RH close seventh chord, first inversion (E4 G4 B4 C5).",
+              "Moves 9 semitones in total (largest single move 2); holds 2 note(s); bass moves 5.",
+              "Has 1 parallel octave(s), which the pop style tolerates."
+            ],
+            "cost": 9.2
+          }
+        ],
+        "playback": [
+          {
+            "midi": 50,
+            "hand": "L",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 65,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 69,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 72,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 74,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 43,
+            "hand": "L",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 50,
+            "hand": "L",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 65,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 67,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 71,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 74,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 48,
+            "hand": "L",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 64,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 67,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 71,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 72,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          }
+        ]
+      },
+      {
+        "level": "advanced",
+        "voicing_type": "Shell and guide-tone left hand; smooth rootless and drop-2 right-hand voicings.",
+        "theory_explanation": "ii leads to V, which resolves to I.",
+        "practice": "Play ii-V-I with guide tones: find the third and seventh of each chord and notice which move by a half or whole step.",
+        "variations": [
+          "When this feels easy, move to the expert version.",
+          "Play it in a new key; the transposition options list every key.",
+          "Swap the left-hand shell for a root-and-fifth to hear what the shell adds."
+        ],
+        "total_cost": 4.641,
+        "method": "dp",
+        "warnings": [],
+        "validation_errors": [],
+        "validation_warnings": [],
+        "tempo": 80,
+        "time_signature": [
+          4,
+          4
+        ],
+        "total_beats": 16.0,
+        "steps": [
+          {
+            "index": 0,
+            "symbol": "Dm7",
+            "roman": "ii7",
+            "beat": 0.0,
+            "duration": 4.0,
+            "role": "main",
+            "chord_tones": [
+              "D",
+              "F",
+              "A",
+              "C"
+            ],
+            "bass": "D",
+            "inversion": "third inversion",
+            "left": [
+              48,
+              53
+            ],
+            "right": [
+              72,
+              74,
+              77,
+              81
+            ],
+            "left_names": [
+              "C",
+              "F"
+            ],
+            "right_names": [
+              "C",
+              "D",
+              "F",
+              "A"
+            ],
+            "voicing_type": "guide tones 7 3 + seventh close",
+            "omitted": [],
+            "tensions": [],
+            "explanation": [
+              "Dm7: LH guide tones (7th below 3rd) (C3 F3); RH close seventh chord, third inversion (C5 D5 F5 A5)."
+            ],
+            "cost": 0.769
+          },
+          {
+            "index": 1,
+            "symbol": "G7",
+            "roman": "V7",
+            "beat": 4.0,
+            "duration": 4.0,
+            "role": "main",
+            "chord_tones": [
+              "G",
+              "B",
+              "D",
+              "F"
+            ],
+            "bass": "G",
+            "inversion": "first inversion",
+            "left": [
+              47,
+              53
+            ],
+            "right": [
+              71,
+              74,
+              77,
+              79
+            ],
+            "left_names": [
+              "B",
+              "F"
+            ],
+            "right_names": [
+              "B",
+              "D",
+              "F",
+              "G"
+            ],
+            "voicing_type": "guide tones 3 7 + seventh close",
+            "omitted": [],
+            "tensions": [],
+            "explanation": [
+              "G7: LH guide tones (3rd below 7th) (B2 F3); RH close seventh chord, first inversion (B4 D5 F5 G5).",
+              "Moves 4 semitones in total (largest single move 2); holds 3 note(s); bass moves 1.",
+              "Has 1 parallel octave(s), which the jazz style tolerates."
+            ],
+            "cost": 2.028
+          },
+          {
+            "index": 2,
+            "symbol": "Cmaj7",
+            "roman": "Imaj7",
+            "beat": 8.0,
+            "duration": 8.0,
+            "role": "main",
+            "chord_tones": [
+              "C",
+              "E",
+              "G",
+              "B"
+            ],
+            "bass": "C",
+            "inversion": "root position",
+            "left": [
+              48,
+              55
+            ],
+            "right": [
+              71,
+              74,
+              76,
+              79
+            ],
+            "left_names": [
+              "C",
+              "G"
+            ],
+            "right_names": [
+              "B",
+              "D",
+              "E",
+              "G"
+            ],
+            "voicing_type": "root fifth + rootless b",
+            "omitted": [],
+            "tensions": [
+              "M9"
+            ],
+            "explanation": [
+              "Cmaj7: LH root and fifth (C3 G3); RH rootless voicing (type B: 7-9-3-5), third inversion (B4 D5 E5 G5).",
+              "Adds colour tone(s): major ninth.",
+              "Moves 4 semitones in total (largest single move 2); holds 3 note(s); bass moves 1."
+            ],
+            "cost": 1.844
+          }
+        ],
+        "playback": [
+          {
+            "midi": 48,
+            "hand": "L",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 53,
+            "hand": "L",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 72,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 74,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 77,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 81,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 47,
+            "hand": "L",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 53,
+            "hand": "L",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 71,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 74,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 77,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 79,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 48,
+            "hand": "L",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 55,
+            "hand": "L",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 71,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 74,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 76,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 79,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          }
+        ]
+      },
+      {
+        "level": "expert",
+        "voicing_type": "Tenths and open shells below; spread, upper-structure and altered voicings above, with tritone substitutes where a dominant resolves down a fifth.",
+        "theory_explanation": "ii leads to V, which resolves to I.",
+        "practice": "Play ii-V-I from memory in three keys, then add the substitution and tensions one at a time.",
+        "variations": [
+          "Play it in a new key; the transposition options list every key.",
+          "Swap the left-hand shell for a root-and-fifth to hear what the shell adds."
+        ],
+        "total_cost": 6.688,
+        "method": "dp",
+        "warnings": [],
+        "validation_errors": [],
+        "validation_warnings": [],
+        "tempo": 80,
+        "time_signature": [
+          4,
+          4
+        ],
+        "total_beats": 16.0,
+        "steps": [
+          {
+            "index": 0,
+            "symbol": "Dm7",
+            "roman": "ii7",
+            "beat": 0.0,
+            "duration": 4.0,
+            "role": "main",
+            "chord_tones": [
+              "D",
+              "F",
+              "A",
+              "C"
+            ],
+            "bass": "D",
+            "inversion": "root position",
+            "left": [
+              50
+            ],
+            "right": [
+              65,
+              72
+            ],
+            "left_names": [
+              "D"
+            ],
+            "right_names": [
+              "F",
+              "C"
+            ],
+            "voicing_type": "bass + guide tone rh",
+            "omitted": [
+              "P5"
+            ],
+            "tensions": [],
+            "explanation": [
+              "Dm7: LH bass note (D3); RH guide tones, first inversion (F4 C5).",
+              "Leaves out: perfect fifth."
+            ],
+            "cost": 0.844
+          },
+          {
+            "index": 1,
+            "symbol": "Db7",
+            "roman": "bII7",
+            "beat": 4.0,
+            "duration": 4.0,
+            "role": "substitution",
+            "chord_tones": [
+              "Db",
+              "F",
+              "Ab",
+              "Cb"
+            ],
+            "bass": "Db",
+            "inversion": "root position",
+            "left": [
+              49
+            ],
+            "right": [
+              65,
+              71
+            ],
+            "left_names": [
+              "Db"
+            ],
+            "right_names": [
+              "F",
+              "Cb"
+            ],
+            "voicing_type": "bass + guide tone rh",
+            "omitted": [
+              "P5"
+            ],
+            "tensions": [],
+            "explanation": [
+              "Db7: LH bass note (Db3); RH guide tones, first inversion (F4 Cb5).",
+              "Leaves out: perfect fifth.",
+              "Moves 2 semitones in total (largest single move 1); holds 1 note(s); bass moves 1."
+            ],
+            "cost": 2.913
+          },
+          {
+            "index": 2,
+            "symbol": "Cmaj7",
+            "roman": "Imaj7",
+            "beat": 8.0,
+            "duration": 8.0,
+            "role": "main",
+            "chord_tones": [
+              "C",
+              "E",
+              "G",
+              "B"
+            ],
+            "bass": "C",
+            "inversion": "root position",
+            "left": [
+              48
+            ],
+            "right": [
+              64,
+              71
+            ],
+            "left_names": [
+              "C"
+            ],
+            "right_names": [
+              "E",
+              "B"
+            ],
+            "voicing_type": "bass + guide tone rh",
+            "omitted": [
+              "P5"
+            ],
+            "tensions": [],
+            "explanation": [
+              "Cmaj7: LH bass note (C3); RH guide tones, first inversion (E4 B4).",
+              "Leaves out: perfect fifth.",
+              "Moves 2 semitones in total (largest single move 1); holds 1 note(s); bass moves 1."
+            ],
+            "cost": 2.931
+          }
+        ],
+        "playback": [
+          {
+            "midi": 50,
+            "hand": "L",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 65,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 72,
+            "hand": "R",
+            "start_beat": 0.0,
+            "duration_beats": 4.0,
+            "chord_index": 0,
+            "velocity": 80
+          },
+          {
+            "midi": 49,
+            "hand": "L",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 65,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 71,
+            "hand": "R",
+            "start_beat": 4.0,
+            "duration_beats": 4.0,
+            "chord_index": 1,
+            "velocity": 80
+          },
+          {
+            "midi": 48,
+            "hand": "L",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 64,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          },
+          {
+            "midi": 71,
+            "hand": "R",
+            "start_beat": 8.0,
+            "duration_beats": 8.0,
+            "chord_index": 2,
+            "velocity": 80
+          }
+        ]
+      }
+    ]
+  },
+  "live": false,
+  "score_meaning": "Cost is a ranking of how smooth and easy a voicing is (lower is smoother); it is not a measure of musical quality."
+}

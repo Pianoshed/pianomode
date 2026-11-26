@@ -1,0 +1,86 @@
+{
+  "chord": {
+    "symbol": "Cmaj7",
+    "root": "C",
+    "type_id": "major7",
+    "quality": "Major seventh",
+    "bass": "C",
+    "inversion": 0,
+    "inversion_name": "root position",
+    "tones": [
+      {
+        "name": "C",
+        "interval": "P1",
+        "degree": 1
+      },
+      {
+        "name": "E",
+        "interval": "M3",
+        "degree": 3
+      },
+      {
+        "name": "G",
+        "interval": "P5",
+        "degree": 5
+      },
+      {
+        "name": "B",
+        "interval": "M7",
+        "degree": 7
+      }
+    ],
+    "pitch_classes": [
+      0,
+      4,
+      7,
+      11
+    ]
+  },
+  "total_found": 86,
+  "returned": 1,
+  "ranking": "static cost, lowest first",
+  "voicings": [
+    {
+      "voicing": {
+        "left": [
+          48
+        ],
+        "right": [
+          60,
+          64,
+          67,
+          71
+        ],
+        "left_names": [
+          "C3"
+        ],
+        "right_names": [
+          "C4",
+          "E4",
+          "G4",
+          "B4"
+        ],
+        "lh_style": "bass",
+        "rh_style": "seventh_close",
+        "tensions": [],
+        "omitted": [],
+        "rh_inversion": 0
+      },
+      "static_cost": {
+        "total": 1.1125,
+        "parts": {
+          "completeness": 0.0,
+          "tension": 0.0,
+          "dissonance": 0.0,
+          "clustering": 0.0,
+          "span": 0.4,
+          "register": 0.0625,
+          "inversion": 0.0,
+          "root_position": 0.0,
+          "ease": 0.65
+        }
+      }
+    }
+  ],
+  "message": null
+}

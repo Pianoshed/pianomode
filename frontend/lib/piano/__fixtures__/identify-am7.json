@@ -1,0 +1,101 @@
+{
+  "status": "identified",
+  "reason": null,
+  "bass": null,
+  "pitch_classes": [
+    9,
+    0,
+    4,
+    7
+  ],
+  "candidates": [
+    {
+      "symbol": "Am7",
+      "root": "A",
+      "type_id": "minor7",
+      "quality": "Minor seventh",
+      "score": 6.0,
+      "required_tones": [
+        "A",
+        "C",
+        "G"
+      ],
+      "detected_tones": [
+        "A",
+        "C",
+        "E",
+        "G"
+      ],
+      "missing_tones": [],
+      "extra_tones": [],
+      "bass": "A",
+      "inversion": 0,
+      "inversion_name": "root position",
+      "rootless": false,
+      "added_tones": [],
+      "altered_tones": [],
+      "enharmonic_symbol": null,
+      "assumptions": []
+    },
+    {
+      "symbol": "C6/A",
+      "root": "C",
+      "type_id": "major6",
+      "quality": "Major sixth",
+      "score": 3.5,
+      "required_tones": [
+        "C",
+        "E",
+        "A"
+      ],
+      "detected_tones": [
+        "C",
+        "E",
+        "G",
+        "A"
+      ],
+      "missing_tones": [],
+      "extra_tones": [],
+      "bass": "A",
+      "inversion": 3,
+      "inversion_name": "third inversion",
+      "rootless": false,
+      "added_tones": [
+        "M6"
+      ],
+      "altered_tones": [],
+      "enharmonic_symbol": null,
+      "assumptions": []
+    },
+    {
+      "symbol": "C/A",
+      "root": "C",
+      "type_id": "major",
+      "quality": "Major triad",
+      "score": 2.0,
+      "required_tones": [
+        "C",
+        "E",
+        "G"
+      ],
+      "detected_tones": [
+        "C",
+        "E",
+        "G"
+      ],
+      "missing_tones": [],
+      "extra_tones": [],
+      "bass": "A",
+      "inversion": null,
+      "inversion_name": null,
+      "rootless": false,
+      "added_tones": [],
+      "altered_tones": [],
+      "enharmonic_symbol": null,
+      "assumptions": [
+        "Bass note is not a chord tone, so this reads as a slash chord."
+      ]
+    }
+  ],
+  "score_meaning": "Scores rank the readings against each other. They are not probabilities."
+}

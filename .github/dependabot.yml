@@ -1,0 +1,37 @@
+# Opens a pull request when a dependency has a new version. CI (tests, build, pip-audit, npm audit)
+# runs on each one, so merge the green ones. Security fixes are opened straight away regardless of
+# this schedule.
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /backend
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    groups:
+      python-minor-patch:
+        update-types: [minor, patch]
+
+  - package-ecosystem: npm
+    directory: /frontend
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    groups:
+      npm-minor-patch:
+        update-types: [minor, patch]
+
+  # Base images in the Dockerfiles (python, node)
+  - package-ecosystem: docker
+    directory: /backend
+    schedule: { interval: weekly, day: monday }
+  - package-ecosystem: docker
+    directory: /frontend
+    schedule: { interval: weekly, day: monday }
+
+  # caddy, postgres and redis images named in the compose files
+  - package-ecosystem: docker-compose
+    directory: /
+    schedule: { interval: weekly, day: monday }
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly, day: monday }

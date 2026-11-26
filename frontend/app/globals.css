@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens. Palette contrast (WCAG AA, 4.5:1 for text pairs) was checked when chosen;
+   re-check if you change a value. Hand colours are reserved for the piano (left/right hand). */
+@layer base {
+:root, [data-theme="light"] {
+  color-scheme: light;
+  --c-bg: 244 245 242;
+  --c-surface: 255 255 255;
+  --c-surface2: 235 237 232;
+  --c-border: 214 217 209;
+  --c-fg: 22 25 29;
+  --c-muted: 86 92 99;
+  --c-accent: 31 107 87;
+  --c-accentfg: 255 255 255;
+  --c-accentsoft: 220 235 229;
+  --c-danger: 179 38 30;
+  --c-success: 27 127 75;
+  --c-left: 43 95 217;
+  --c-right: 154 90 0;
+  /* The keyboard stays ivory and ebony in both themes, as on the instrument. */
+  --c-keywhite: 250 250 246;
+  --c-keyblack: 26 28 31;
+  --c-keyink: 38 42 46;
+  --c-keyinkblack: 232 235 230;
+  /* Marks on the keys: fixed, because the keys are. */
+  --c-dot: 31 107 87;
+  --c-dotsoft: 224 240 233;
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+  --c-bg: 16 19 21;
+  --c-surface: 23 27 30;
+  --c-surface2: 31 36 39;
+  --c-border: 44 51 55;
+  --c-fg: 236 239 234;
+  --c-muted: 163 170 176;
+  --c-accent: 93 185 154;
+  --c-accentfg: 11 26 21;
+  --c-accentsoft: 27 46 40;
+  --c-danger: 242 135 127;
+  --c-success: 108 203 147;
+  --c-left: 126 162 255;
+  --c-right: 240 165 60;
+  --c-keywhite: 226 228 222;
+  --c-keyblack: 12 14 16;
+  --c-keyink: 38 42 46;
+  --c-keyinkblack: 232 235 230;
+  --c-dot: 31 107 87;
+  --c-dotsoft: 224 240 233;
+}
+
+  html { -webkit-text-size-adjust: 100%; }
+  body { font-feature-settings: "tnum" 1, "kern" 1; }
+  :focus-visible { outline: 2px solid rgb(var(--c-accent)); outline-offset: 2px; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+}

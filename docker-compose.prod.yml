@@ -1,0 +1,129 @@
+# PRODUCTION stack. Follow docs/deployment.md. Start with:
+#   docker compose -f docker-compose.prod.yml --env-file .env up -d --build
+#
+# Only Caddy is reachable from the internet (ports 80 and 443). The database, Redis and the API
+# have no published ports, so nothing else can be reached or can spoof the client address.
+
+x-logging: &logging
+  driver: json-file
+  options: { max-size: "10m", max-file: "5" }  # stops logs filling the disk
+
+# Containers that run our own code: no extra privileges, no Linux capabilities.
+x-locked-down: &locked-down
+  security_opt: ["no-new-privileges:true"]
+  cap_drop: [ALL]
+
+x-app: &app
+  <<: *locked-down
+  env_file: .env
+  restart: unless-stopped
+  logging: *logging
+  environment:
+    PIANO_DATABASE_URL: postgresql+psycopg://piano:${POSTGRES_PASSWORD}@db:5432/piano
+    PIANO_REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
+    PIANO_ENV: production
+    PIANO_TRUSTED_PROXIES: "1"
+    PIANO_RATE_LIMIT_BACKEND: redis
+    PIANO_STORAGE_DIR: /data/storage
+
+services:
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    logging: *logging
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment: { DOMAIN: "${DOMAIN}" }
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data     # the HTTPS certificates; keep this volume
+      - caddy_config:/config
+    depends_on: [api, web]
+
+  web:
+    <<: *locked-down
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_SUPPORT_EMAIL: ${SUPPORT_EMAIL}
+        NEXT_PUBLIC_COMPANY_NAME: ${COMPANY_NAME}
+        API_INTERNAL_URL: http://api:8000
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      API_INTERNAL_URL: "http://api:8000"
+      # Strict script policy (docs/adr/0017-strict-csp.md). Try it on a test copy first.
+      CSP_ENFORCE_STRICT: "${CSP_ENFORCE_STRICT:-false}"
+    depends_on: [api]
+
+  api:
+    <<: *app
+    build: ./backend
+    command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2"
+    volumes: [storage:/data/storage]
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_healthy }
+
+  worker:
+    <<: *app
+    build: ./backend
+    command: celery -A app.workers.celery_app.celery_app worker --loglevel=info --concurrency=2
+    volumes: [storage:/data/storage]
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_healthy }
+
+  beat:
+    # The daily jobs (plan-ending emails at 07:00 UTC, clearing dead sessions and links at 03:30 UTC). Run exactly one of these.
+    <<: *app
+    build: ./backend
+    command: celery -A app.workers.celery_app.celery_app beat --loglevel=info --schedule=/tmp/celerybeat-schedule
+    depends_on:
+      db: { condition: service_healthy }
+      redis: { condition: service_healthy }
+
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      POSTGRES_USER: piano
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: piano
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U piano"]
+      interval: 10s
+      retries: 10
+
+  redis:
+    image: redis:7
+    restart: unless-stopped
+    logging: *logging
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    volumes: [redisdata:/data]
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a \"$$REDIS_PASSWORD\" ping | grep -q PONG"]
+      interval: 10s
+      retries: 10
+    environment: { REDIS_PASSWORD: "${REDIS_PASSWORD}" }
+
+  backup:
+    # A backup of the database and of the saved-files folder every day at 02:00 UTC into ./backups,
+    # keeping the last 14 days.
+    # This is on the SAME server, so also copy ./backups somewhere else (docs/deployment.md).
+    image: postgres:16
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      PGHOST: db
+      PGUSER: piano
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      PGDATABASE: piano
+      BACKUP_DIR: /backups
+      STORAGE_DIR: /storage
+    volumes: ["./deploy:/deploy:ro", "./backups:/backups", "storage:/storage:ro"]
+    entrypoint: ["/bin/sh", "/deploy/backup-loop.sh"]
+    depends_on: { db: { condition: service_healthy } }
+
+volumes: { pgdata: {}, redisdata: {}, storage: {}, caddy_data: {}, caddy_config: {} }

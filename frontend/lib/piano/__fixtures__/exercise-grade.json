@@ -1,0 +1,9 @@
+{
+  "exercise_id": "v1:triad_identify:beginner:3",
+  "status": "unreadable",
+  "correct": false,
+  "feedback": "Could not read 'Zm': A chord symbol starts with a root note A-G, got 'Z'",
+  "correct_answer": "C",
+  "explanation": "The notes C E G form C (major triad): C E G.",
+  "items": []
+}

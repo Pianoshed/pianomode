@@ -1,0 +1,28 @@
+# Caddy: gets and renews the HTTPS certificate by itself, then sends /api/* to the API and
+# everything else to the web app. Set DOMAIN in .env (for example DOMAIN=piano.example.com) and
+# point that name's DNS at this server before starting.
+{$DOMAIN} {
+	encode zstd gzip
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		-Server
+	}
+
+	# Overwrite X-Forwarded-For with the address the connection really came from. The API trusts
+	# exactly this one entry (PIANO_TRUSTED_PROXIES=1), so a caller cannot choose their own.
+	handle /api/* {
+		request_body {
+			max_size 25MB
+		}
+		reverse_proxy api:8000 {
+			header_up X-Forwarded-For {remote_host}
+		}
+	}
+
+	handle {
+		reverse_proxy web:3000 {
+			header_up X-Forwarded-For {remote_host}
+		}
+	}
+}

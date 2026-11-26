@@ -1,0 +1,74 @@
+{
+  "chord": {
+    "symbol": "C/D",
+    "root": "C",
+    "type_id": "major",
+    "quality": "Major triad",
+    "bass": "D",
+    "inversion": null,
+    "inversion_name": null,
+    "tones": [
+      {
+        "name": "C",
+        "interval": "P1",
+        "degree": 1
+      },
+      {
+        "name": "E",
+        "interval": "M3",
+        "degree": 3
+      },
+      {
+        "name": "G",
+        "interval": "P5",
+        "degree": 5
+      }
+    ],
+    "pitch_classes": [
+      0,
+      4,
+      7
+    ]
+  },
+  "notes": [
+    {
+      "name": "D3",
+      "name_unicode": "D3",
+      "octave": 3,
+      "midi": 50,
+      "pitch_class": 2,
+      "frequency": 146.8324
+    },
+    {
+      "name": "C4",
+      "name_unicode": "C4",
+      "octave": 4,
+      "midi": 60,
+      "pitch_class": 0,
+      "frequency": 261.6256
+    },
+    {
+      "name": "E4",
+      "name_unicode": "E4",
+      "octave": 4,
+      "midi": 64,
+      "pitch_class": 4,
+      "frequency": 329.6276
+    },
+    {
+      "name": "G4",
+      "name_unicode": "G4",
+      "octave": 4,
+      "midi": 67,
+      "pitch_class": 7,
+      "frequency": 391.9954
+    }
+  ],
+  "midi_notes": [
+    50,
+    60,
+    64,
+    67
+  ],
+  "aliases": []
+}

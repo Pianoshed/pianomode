@@ -1,0 +1,241 @@
+{
+  "difficulties": [
+    "beginner",
+    "intermediate",
+    "advanced",
+    "expert"
+  ],
+  "kinds": [
+    {
+      "kind": "note_name",
+      "title": "Note identification",
+      "topic": "notes",
+      "objective": "Name notes on the keyboard, including enharmonic names and octave numbers.",
+      "prerequisites": [],
+      "ear_training": false
+    },
+    {
+      "kind": "interval_identify",
+      "title": "Name the interval",
+      "topic": "intervals",
+      "objective": "Name the interval between two notes by size and quality.",
+      "prerequisites": [
+        "note_name"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "interval_build",
+      "title": "Build an interval",
+      "topic": "intervals",
+      "objective": "Spell the note a given interval above or below another note.",
+      "prerequisites": [
+        "interval_identify"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "scale_construct",
+      "title": "Spell a scale",
+      "topic": "scales",
+      "objective": "Construct major, minor, modal and other scales with correct spelling.",
+      "prerequisites": [
+        "interval_build"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "key_signature",
+      "title": "Key signatures",
+      "topic": "key_signatures",
+      "objective": "Relate keys to their sharps and flats.",
+      "prerequisites": [
+        "scale_construct"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "triad_build",
+      "title": "Spell a triad",
+      "topic": "triads",
+      "objective": "Spell major, minor, diminished, augmented and suspended triads.",
+      "prerequisites": [
+        "interval_build"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "triad_identify",
+      "title": "Identify a triad",
+      "topic": "triads",
+      "objective": "Name a triad from the notes on the keyboard, including slash chords.",
+      "prerequisites": [
+        "triad_build"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "inversion_identify",
+      "title": "Chord inversions",
+      "topic": "inversions",
+      "objective": "Tell which chord tone is in the bass.",
+      "prerequisites": [
+        "triad_identify"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "seventh_build",
+      "title": "Spell a seventh chord",
+      "topic": "seventh_chords",
+      "objective": "Spell seventh and sixth chords, including half- and fully diminished.",
+      "prerequisites": [
+        "triad_build"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "seventh_identify",
+      "title": "Identify a seventh chord",
+      "topic": "seventh_chords",
+      "objective": "Name seventh chords and their inversions from the keyboard.",
+      "prerequisites": [
+        "seventh_build",
+        "triad_identify"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "diatonic_chord",
+      "title": "Diatonic chords",
+      "topic": "diatonic_harmony",
+      "objective": "Build triads and sevenths on each degree of a scale.",
+      "prerequisites": [
+        "scale_construct",
+        "triad_build"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "roman_numeral",
+      "title": "Roman numeral analysis",
+      "topic": "roman_numerals",
+      "objective": "Label a chord with its Roman numeral in a key.",
+      "prerequisites": [
+        "diatonic_chord"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "roman_to_chord",
+      "title": "Numerals to chords",
+      "topic": "roman_numerals",
+      "objective": "Write the chord a Roman numeral stands for in a key.",
+      "prerequisites": [
+        "diatonic_chord"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "progression_build",
+      "title": "Spell a progression",
+      "topic": "progressions",
+      "objective": "Write common progressions in any key.",
+      "prerequisites": [
+        "roman_to_chord"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "voice_leading_choice",
+      "title": "Smooth voice leading",
+      "topic": "voice_leading",
+      "objective": "Choose the inversion that moves the least.",
+      "prerequisites": [
+        "triad_identify",
+        "diatonic_chord"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "cadence_identify",
+      "title": "Identify cadences",
+      "topic": "cadences",
+      "objective": "Recognise authentic, plagal, half and deceptive cadences.",
+      "prerequisites": [
+        "roman_numeral"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "secondary_dominant",
+      "title": "Secondary dominants",
+      "topic": "secondary_dominants",
+      "objective": "Build applied dominant and leading-tone chords.",
+      "prerequisites": [
+        "roman_to_chord"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "modal_interchange",
+      "title": "Borrowed chords",
+      "topic": "modal_interchange",
+      "objective": "Spot chords borrowed from the parallel mode.",
+      "prerequisites": [
+        "roman_numeral"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "extension_identify",
+      "title": "Extended chords",
+      "topic": "extensions",
+      "objective": "Name ninth, eleventh, thirteenth and altered chords.",
+      "prerequisites": [
+        "seventh_identify"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "substitution",
+      "title": "Harmonic substitution",
+      "topic": "substitutions",
+      "objective": "Find tritone substitutes and related ii chords for dominant chords.",
+      "prerequisites": [
+        "seventh_build",
+        "secondary_dominant"
+      ],
+      "ear_training": false
+    },
+    {
+      "kind": "ear_interval",
+      "title": "Ear training: intervals",
+      "topic": "ear_training",
+      "objective": "Recognise intervals by ear.",
+      "prerequisites": [],
+      "ear_training": true
+    },
+    {
+      "kind": "ear_chord_quality",
+      "title": "Ear training: chord quality",
+      "topic": "ear_training",
+      "objective": "Recognise chord qualities by ear.",
+      "prerequisites": [
+        "ear_interval"
+      ],
+      "ear_training": true
+    },
+    {
+      "kind": "ear_cadence",
+      "title": "Ear training: cadences",
+      "topic": "ear_training",
+      "objective": "Recognise cadences by ear.",
+      "prerequisites": [
+        "ear_chord_quality",
+        "cadence_identify"
+      ],
+      "ear_training": true
+    }
+  ]
+}

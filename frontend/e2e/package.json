@@ -1,0 +1,8 @@
+{
+  "name": "piano-e2e",
+  "private": true,
+  "type": "module",
+  "description": "Browser end-to-end test for the interactive piano. Not part of CI: it needs a real browser.",
+  "scripts": { "test": "node piano.e2e.mjs" },
+  "dependencies": { "@sparticuz/chromium": "131.0.0", "puppeteer-core": "23.11.1" }
+}

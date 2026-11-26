@@ -1,0 +1,40 @@
+{
+  "status": "identified",
+  "reason": null,
+  "bass": null,
+  "pitch_classes": [
+    0,
+    4,
+    7
+  ],
+  "candidates": [
+    {
+      "symbol": "C",
+      "root": "C",
+      "type_id": "major",
+      "quality": "Major triad",
+      "score": 6.0,
+      "required_tones": [
+        "C",
+        "E",
+        "G"
+      ],
+      "detected_tones": [
+        "C",
+        "E",
+        "G"
+      ],
+      "missing_tones": [],
+      "extra_tones": [],
+      "bass": "C",
+      "inversion": 0,
+      "inversion_name": "root position",
+      "rootless": false,
+      "added_tones": [],
+      "altered_tones": [],
+      "enharmonic_symbol": null,
+      "assumptions": []
+    }
+  ],
+  "score_meaning": "Scores rank the readings against each other. They are not probabilities."
+}

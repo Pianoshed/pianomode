@@ -1,0 +1,726 @@
+{
+ "progressions": [
+  {
+   "id": "major_i_iv_v_i",
+   "name": "I–IV–V–I",
+   "mode": "major",
+   "difficulty": "beginner",
+   "styles": [
+    "pop",
+    "folk",
+    "classical",
+    "blues"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The three primary chords. I is home, IV leaves it gently, V creates the strongest pull back to I.",
+   "practice": "Play each chord with the left-hand root and a close right-hand triad. Say the chord names aloud as you change.",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IVmaj7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "pop_i_v_vi_iv",
+   "name": "I–V–vi–IV",
+   "mode": "major",
+   "difficulty": "beginner",
+   "styles": [
+    "pop",
+    "worship",
+    "rock"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The most common modern pop and worship loop. The minor vi chord adds a touch of sadness before IV lifts it again.",
+   "practice": "Keep the right hand in one small area and move to the nearest inversion each time.",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    },
+    {
+     "triads": "vi",
+     "sevenths": "vi7",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IVmaj7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "fifties_i_vi_iv_v",
+   "name": "I–vi–IV–V",
+   "mode": "major",
+   "difficulty": "beginner",
+   "styles": [
+    "pop",
+    "doo-wop"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The 1950s progression: tonic, its relative minor, subdominant, dominant.",
+   "practice": "Play in steady quarter notes, then try one chord per bar.",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "vi",
+     "sevenths": "vi7",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IVmaj7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "pop_vi_iv_i_v",
+   "name": "vi–IV–I–V",
+   "mode": "major",
+   "difficulty": "beginner",
+   "styles": [
+    "pop",
+    "worship"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The same four chords as I–V–vi–IV starting on the minor chord, which gives a more reflective feel.",
+   "practice": "Compare it with I–V–vi–IV: same chords, different starting point.",
+   "chords": [
+    {
+     "triads": "vi",
+     "sevenths": "vi7",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IVmaj7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "gospel_i_iii_iv_v",
+   "name": "I–iii–IV–V",
+   "mode": "major",
+   "difficulty": "intermediate",
+   "styles": [
+    "gospel",
+    "worship"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "A rising gospel build: each chord climbs one step, with iii acting as a soft tonic substitute.",
+   "practice": "Voice the right hand so the top note climbs by step: E, G, A, B.",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "iii",
+     "sevenths": "iii7",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IVmaj7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "ii_v_i",
+   "name": "ii–V–I",
+   "mode": "major",
+   "difficulty": "intermediate",
+   "styles": [
+    "jazz"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The core jazz cadence. ii prepares V, V resolves to I; the root moves down a fifth each time.",
+   "practice": "Voice it with guide tones: the 7th of each chord falls to the 3rd of the next.",
+   "chords": [
+    {
+     "triads": "ii",
+     "sevenths": "ii7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 8
+    }
+   ]
+  },
+  {
+   "id": "ii_v_i_vi",
+   "name": "ii–V–I–vi",
+   "mode": "major",
+   "difficulty": "intermediate",
+   "styles": [
+    "jazz",
+    "pop"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "ii–V–I followed by vi, which keeps the harmony moving instead of coming to rest.",
+   "practice": "Notice the root keeps falling a fifth: D, G, C, then up a third to A.",
+   "chords": [
+    {
+     "triads": "ii",
+     "sevenths": "ii7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "vi",
+     "sevenths": "vi7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "i_vi_ii_v",
+   "name": "I–vi–ii–V",
+   "mode": "major",
+   "difficulty": "intermediate",
+   "styles": [
+    "jazz",
+    "pop"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The classic turnaround. The roots descend a fifth each time from vi, so it loops naturally back to I.",
+   "practice": "Play it as a loop, two bars per chord pair, until the change back to I feels automatic.",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "vi",
+     "sevenths": "vi7",
+     "beats": 4
+    },
+    {
+     "triads": "ii",
+     "sevenths": "ii7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "iii_vi_ii_v",
+   "name": "iii–vi–ii–V",
+   "mode": "major",
+   "difficulty": "intermediate",
+   "styles": [
+    "jazz"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "A chain of falling fifths leading into V. Often used to reach the tonic from the third degree.",
+   "practice": "Practise it before a final I so you hear what the chain is aiming at.",
+   "chords": [
+    {
+     "triads": "iii",
+     "sevenths": "iii7",
+     "beats": 4
+    },
+    {
+     "triads": "vi",
+     "sevenths": "vi7",
+     "beats": 4
+    },
+    {
+     "triads": "ii",
+     "sevenths": "ii7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "twelve_bar_blues",
+   "name": "12-bar blues",
+   "mode": "major",
+   "difficulty": "intermediate",
+   "styles": [
+    "blues",
+    "rock"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "Twelve bars built on I, IV and V. All three chords are usually played as dominant sevenths. The last V is the turnaround.",
+   "practice": "Count the bars aloud. Learn the shape first (4 bars I, 2 bars IV, 2 bars I, then V IV I V).",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "I7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "I7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "I7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "I7",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IV7",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IV7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "I7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "I7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IV7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "I7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "minor_i_iv_v_i",
+   "name": "i–iv–V–i",
+   "mode": "minor",
+   "difficulty": "beginner",
+   "styles": [
+    "classical",
+    "folk"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The minor key's basic cadence. V is borrowed from the harmonic minor scale (it has the raised seventh) so it pulls strongly to i.",
+   "practice": "Play the V chord and notice the raised seventh scale degree resolving up to the tonic.",
+   "chords": [
+    {
+     "triads": "i",
+     "sevenths": "i7",
+     "beats": 4
+    },
+    {
+     "triads": "iv",
+     "sevenths": "iv7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    },
+    {
+     "triads": "i",
+     "sevenths": "i7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "minor_ii_v_i",
+   "name": "ii°–V–i",
+   "mode": "minor",
+   "difficulty": "intermediate",
+   "styles": [
+    "jazz"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The minor-key version of ii–V–I. The ii chord is half-diminished and V is a dominant seventh.",
+   "practice": "Compare with the major ii–V–I; only the first and last chords change quality.",
+   "chords": [
+    {
+     "triads": "ii°",
+     "sevenths": "iiø7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    },
+    {
+     "triads": "i",
+     "sevenths": "i7",
+     "beats": 8
+    }
+   ]
+  },
+  {
+   "id": "minor_andalusian",
+   "name": "i–VII–VI–V",
+   "mode": "minor",
+   "difficulty": "intermediate",
+   "styles": [
+    "flamenco",
+    "pop",
+    "rock"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The Andalusian cadence: a descending line (A G F E in A minor) ending on the dominant.",
+   "practice": "Listen for the stepwise descending bass line.",
+   "chords": [
+    {
+     "triads": "i",
+     "sevenths": "i7",
+     "beats": 4
+    },
+    {
+     "triads": "VII",
+     "sevenths": "VII7",
+     "beats": 4
+    },
+    {
+     "triads": "VI",
+     "sevenths": "VImaj7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "minor_i_vi_iii_vii",
+   "name": "i–VI–III–VII",
+   "mode": "minor",
+   "difficulty": "beginner",
+   "styles": [
+    "pop",
+    "rock"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "A common minor-key pop loop that moves through the relative major (III).",
+   "practice": "Keep the same hand shape and slide it to each new chord.",
+   "chords": [
+    {
+     "triads": "i",
+     "sevenths": "i7",
+     "beats": 4
+    },
+    {
+     "triads": "VI",
+     "sevenths": "VImaj7",
+     "beats": 4
+    },
+    {
+     "triads": "III",
+     "sevenths": "IIImaj7",
+     "beats": 4
+    },
+    {
+     "triads": "VII",
+     "sevenths": "VII7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "jazz_turnaround_secondary",
+   "name": "I–V7/ii–ii–V",
+   "mode": "major",
+   "difficulty": "advanced",
+   "styles": [
+    "jazz"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "A turnaround where the vi chord is replaced by V7 of ii, so the line leads strongly into ii.",
+   "practice": "Hear how the third of the A7 (C#) is the only note outside the key.",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "V/ii",
+     "sevenths": "V7/ii",
+     "beats": 4
+    },
+    {
+     "triads": "ii",
+     "sevenths": "ii7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "jazz_turnaround_diminished",
+   "name": "I–vii°7/ii–ii–V",
+   "mode": "major",
+   "difficulty": "advanced",
+   "styles": [
+    "jazz"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "A passing diminished chord a half step below ii connects I to ii with a chromatic bass line.",
+   "practice": "Play the bass line C, C#, D, G and listen to the chromatic step.",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "vii°/ii",
+     "sevenths": "vii°7/ii",
+     "beats": 4
+    },
+    {
+     "triads": "ii",
+     "sevenths": "ii7",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    }
+   ]
+  },
+  {
+   "id": "jazz_backdoor",
+   "name": "iv–bVII7–I",
+   "mode": "major",
+   "difficulty": "advanced",
+   "styles": [
+    "jazz"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "The backdoor ii–V: borrowed iv and bVII7 resolve down to I instead of the usual V.",
+   "practice": "Compare how bVII7 resolves with the more familiar V7.",
+   "chords": [
+    {
+     "triads": "iv",
+     "sevenths": "iv7",
+     "beats": 4
+    },
+    {
+     "triads": "bVII",
+     "sevenths": "bVII7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 8
+    }
+   ]
+  },
+  {
+   "id": "gospel_walkup",
+   "name": "Gospel walk-up",
+   "mode": "major",
+   "difficulty": "advanced",
+   "styles": [
+    "gospel",
+    "worship"
+   ],
+   "time_signature": [
+    4,
+    4
+   ],
+   "explanation": "A walking bass line from I up to V through chord inversions and a passing diminished chord, a staple of gospel.",
+   "practice": "Play the bass line alone first: C, E, F, F#, G. Then add the right-hand chords.",
+   "chords": [
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 4
+    },
+    {
+     "triads": "I6",
+     "sevenths": "I6",
+     "beats": 4
+    },
+    {
+     "triads": "IV",
+     "sevenths": "IVmaj7",
+     "beats": 4
+    },
+    {
+     "triads": "vii°/V",
+     "sevenths": "vii°7/V",
+     "beats": 4
+    },
+    {
+     "triads": "I6/4",
+     "sevenths": "I6/4",
+     "beats": 4
+    },
+    {
+     "triads": "V",
+     "sevenths": "V7",
+     "beats": 4
+    },
+    {
+     "triads": "I",
+     "sevenths": "Imaj7",
+     "beats": 8
+    }
+   ]
+  }
+ ]
+}

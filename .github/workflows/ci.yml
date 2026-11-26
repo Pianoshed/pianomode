@@ -1,0 +1,90 @@
+name: ci
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1" # every Monday: new vulnerabilities appear even when our code does not change
+# The workflow only reads the code; nothing here needs to write to the repository.
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: backend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements-dev.txt
+      - run: ruff format --check .
+      - run: ruff check .
+      - run: mypy
+      - run: pytest
+
+  # The unit tests use SQLite. This job proves the migrations and the locking work on the real
+  # database (PostgreSQL 16, the same as production).
+  migrations:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: backend } }
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_USER: piano, POSTGRES_PASSWORD: piano, POSTGRES_DB: piano }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U piano" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      PIANO_DATABASE_URL: postgresql+psycopg://piano:piano@localhost:5432/piano
+      PIANO_TEST_POSTGRES_URL: postgresql+psycopg://piano:piano@localhost:5432/piano
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements-dev.txt
+      - run: alembic upgrade head
+      - name: Migrations match the models (no forgotten migration)
+        run: alembic check
+      - name: Row-locking tests on real PostgreSQL
+        run: pytest tests/test_postgres_concurrency.py -v
+      - name: Migrations can be undone and redone
+        run: alembic downgrade base && alembic upgrade head && alembic check
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: frontend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+
+  # Fails when a dependency we ship has a known vulnerability.
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: pip install pip-audit && pip-audit -r backend/requirements.txt
+      - run: npm ci && npm audit --omit=dev
+        working-directory: frontend
+
+  # The production images build. (Nothing is pushed.)
+  images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build ./backend
+      - run: docker build ./frontend
+      - name: Deploy scripts have no syntax errors
+        run: for f in deploy/*.sh; do sh -n "$f"; done
+      - name: Production compose file is valid
+        run: |
+          cp .env.production.example .env
+          sed -i 's/^POSTGRES_PASSWORD=.*/POSTGRES_PASSWORD=ci/; s/^REDIS_PASSWORD=.*/REDIS_PASSWORD=ci/' .env
+          docker compose -f docker-compose.prod.yml config --quiet

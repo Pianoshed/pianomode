@@ -1,0 +1,18 @@
+FROM python:3.12-slim
+# MALLOC_ARENA_MAX: stops the C memory allocator keeping a separate pool per worker thread, which
+# made the API hold ~600 MB after a burst of traffic instead of ~330 MB (see scripts/loadtest.py).
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 MALLOC_ARENA_MAX=2
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg libsndfile1 \
+    && rm -rf /var/lib/apt/lists/* \
+    && useradd --create-home --uid 10001 app \
+    && mkdir -p /data/storage && chown app /data/storage
+WORKDIR /srv
+COPY requirements.txt .
+RUN pip install --no-cache-dir --require-hashes -r requirements.txt
+COPY --chown=app:app . .
+# Never run as root inside the container.
+USER app
+EXPOSE 8000
+HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health', timeout=3)"
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "2"]

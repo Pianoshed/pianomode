@@ -1,0 +1,235 @@
+{
+  "id": "triads",
+  "title": "Triads",
+  "level": "beginner",
+  "summary": "Build and recognise major, minor, diminished and augmented triads.",
+  "revision": 1,
+  "tags": [
+    "chords",
+    "triads"
+  ],
+  "objectives": [
+    "Build a triad from stacked thirds.",
+    "Tell the four triad qualities apart by their intervals.",
+    "Hear the difference between major and minor."
+  ],
+  "sections": [
+    {
+      "heading": "Three notes, stacked in thirds",
+      "body": [
+        "A triad is a root, a third above it and a fifth above it. What changes the sound is whether the thirds are major or minor.",
+        "A major triad is a major third plus a minor third. A minor triad is a minor third plus a major third."
+      ],
+      "examples": [
+        {
+          "type": "chord",
+          "caption": "C major: C, E, G.",
+          "items": [
+            {
+              "label": "C",
+              "notes": [
+                "C",
+                "E",
+                "G"
+              ],
+              "midi": [
+                60,
+                64,
+                67
+              ],
+              "detail": null
+            }
+          ],
+          "play": [
+            {
+              "notes": [
+                60,
+                64,
+                67
+              ],
+              "start": 0.0,
+              "duration": 3.0,
+              "item": 0
+            }
+          ],
+          "tempo": 80
+        },
+        {
+          "type": "chord",
+          "caption": "C minor: the third is lowered by a semitone.",
+          "items": [
+            {
+              "label": "Cm",
+              "notes": [
+                "C",
+                "Eb",
+                "G"
+              ],
+              "midi": [
+                60,
+                63,
+                67
+              ],
+              "detail": null
+            }
+          ],
+          "play": [
+            {
+              "notes": [
+                60,
+                63,
+                67
+              ],
+              "start": 0.0,
+              "duration": 3.0,
+              "item": 0
+            }
+          ],
+          "tempo": 80
+        }
+      ]
+    },
+    {
+      "heading": "Diminished and augmented",
+      "body": [
+        "A diminished triad stacks two minor thirds, giving a tense, closed sound. An augmented triad stacks two major thirds, giving an open, unresolved sound."
+      ],
+      "examples": [
+        {
+          "type": "chord",
+          "caption": "C diminished: two minor thirds.",
+          "items": [
+            {
+              "label": "Cdim",
+              "notes": [
+                "C",
+                "Eb",
+                "Gb"
+              ],
+              "midi": [
+                60,
+                63,
+                66
+              ],
+              "detail": null
+            }
+          ],
+          "play": [
+            {
+              "notes": [
+                60,
+                63,
+                66
+              ],
+              "start": 0.0,
+              "duration": 3.0,
+              "item": 0
+            }
+          ],
+          "tempo": 80
+        },
+        {
+          "type": "chord",
+          "caption": "C augmented: two major thirds.",
+          "items": [
+            {
+              "label": "Caug",
+              "notes": [
+                "C",
+                "E",
+                "G#"
+              ],
+              "midi": [
+                60,
+                64,
+                68
+              ],
+              "detail": null
+            }
+          ],
+          "play": [
+            {
+              "notes": [
+                60,
+                64,
+                68
+              ],
+              "start": 0.0,
+              "duration": 3.0,
+              "item": 0
+            }
+          ],
+          "tempo": 80
+        }
+      ]
+    }
+  ],
+  "practice": [
+    {
+      "kind": "triad_build",
+      "title": "Spell a triad",
+      "difficulty": "beginner",
+      "goal": 3,
+      "correct": 3,
+      "attempted": true,
+      "met": true,
+      "ear_training": false
+    },
+    {
+      "kind": "triad_identify",
+      "title": "Identify a triad",
+      "difficulty": "beginner",
+      "goal": 3,
+      "correct": 0,
+      "attempted": false,
+      "met": false,
+      "ear_training": false
+    },
+    {
+      "kind": "ear_chord_quality",
+      "title": "Ear training: chord quality",
+      "difficulty": "beginner",
+      "goal": 3,
+      "correct": 0,
+      "attempted": false,
+      "met": false,
+      "ear_training": true
+    }
+  ],
+  "status": "in_progress",
+  "prerequisites": [
+    {
+      "id": "intervals",
+      "title": "Intervals",
+      "status": "not_started"
+    },
+    {
+      "id": "major-scale",
+      "title": "The major scale",
+      "status": "not_started"
+    }
+  ],
+  "next": [
+    {
+      "id": "inversions",
+      "title": "Chord inversions",
+      "status": "not_started"
+    },
+    {
+      "id": "seventh-chords",
+      "title": "Seventh chords",
+      "status": "not_started"
+    },
+    {
+      "id": "diatonic-harmony",
+      "title": "Diatonic harmony and Roman numerals",
+      "status": "not_started"
+    },
+    {
+      "id": "ear-training",
+      "title": "Ear training basics",
+      "status": "not_started"
+    }
+  ],
+  "movement_slug": null
+}

@@ -1,0 +1,89 @@
+{
+  "chord": {
+    "symbol": "Cmaj7",
+    "root": "C",
+    "type_id": "major7",
+    "quality": "Major seventh",
+    "bass": "C",
+    "inversion": 0,
+    "inversion_name": "root position",
+    "tones": [
+      {
+        "name": "C",
+        "interval": "P1",
+        "degree": 1
+      },
+      {
+        "name": "E",
+        "interval": "M3",
+        "degree": 3
+      },
+      {
+        "name": "G",
+        "interval": "P5",
+        "degree": 5
+      },
+      {
+        "name": "B",
+        "interval": "M7",
+        "degree": 7
+      }
+    ],
+    "pitch_classes": [
+      0,
+      4,
+      7,
+      11
+    ]
+  },
+  "notes": [
+    {
+      "name": "C4",
+      "name_unicode": "C4",
+      "octave": 4,
+      "midi": 60,
+      "pitch_class": 0,
+      "frequency": 261.6256
+    },
+    {
+      "name": "E4",
+      "name_unicode": "E4",
+      "octave": 4,
+      "midi": 64,
+      "pitch_class": 4,
+      "frequency": 329.6276
+    },
+    {
+      "name": "G4",
+      "name_unicode": "G4",
+      "octave": 4,
+      "midi": 67,
+      "pitch_class": 7,
+      "frequency": 391.9954
+    },
+    {
+      "name": "B4",
+      "name_unicode": "B4",
+      "octave": 4,
+      "midi": 71,
+      "pitch_class": 11,
+      "frequency": 493.8833
+    }
+  ],
+  "midi_notes": [
+    60,
+    64,
+    67,
+    71
+  ],
+  "aliases": [
+    "maj7",
+    "Maj7",
+    "M7",
+    "Δ7",
+    "△7",
+    "ma7",
+    "Δ",
+    "△"
+  ]
+}

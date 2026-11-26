@@ -1,0 +1,295 @@
+{
+ "scales": [
+  {
+   "id": "major",
+   "name": "Major",
+   "formula": [
+    "P1",
+    "M2",
+    "M3",
+    "P4",
+    "P5",
+    "M6",
+    "M7"
+   ],
+   "family": "diatonic",
+   "aliases": [
+    "ionian"
+   ]
+  },
+  {
+   "id": "natural_minor",
+   "name": "Natural minor",
+   "formula": [
+    "P1",
+    "M2",
+    "m3",
+    "P4",
+    "P5",
+    "m6",
+    "m7"
+   ],
+   "family": "diatonic",
+   "aliases": [
+    "minor",
+    "aeolian"
+   ]
+  },
+  {
+   "id": "harmonic_minor",
+   "name": "Harmonic minor",
+   "formula": [
+    "P1",
+    "M2",
+    "m3",
+    "P4",
+    "P5",
+    "m6",
+    "M7"
+   ],
+   "family": "minor",
+   "aliases": []
+  },
+  {
+   "id": "melodic_minor",
+   "name": "Melodic minor",
+   "formula": [
+    "P1",
+    "M2",
+    "m3",
+    "P4",
+    "P5",
+    "M6",
+    "M7"
+   ],
+   "descending": [
+    "P1",
+    "M2",
+    "m3",
+    "P4",
+    "P5",
+    "m6",
+    "m7"
+   ],
+   "family": "minor",
+   "aliases": []
+  },
+  {
+   "id": "dorian",
+   "name": "Dorian",
+   "formula": [
+    "P1",
+    "M2",
+    "m3",
+    "P4",
+    "P5",
+    "M6",
+    "m7"
+   ],
+   "family": "mode",
+   "aliases": []
+  },
+  {
+   "id": "phrygian",
+   "name": "Phrygian",
+   "formula": [
+    "P1",
+    "m2",
+    "m3",
+    "P4",
+    "P5",
+    "m6",
+    "m7"
+   ],
+   "family": "mode",
+   "aliases": []
+  },
+  {
+   "id": "lydian",
+   "name": "Lydian",
+   "formula": [
+    "P1",
+    "M2",
+    "M3",
+    "A4",
+    "P5",
+    "M6",
+    "M7"
+   ],
+   "family": "mode",
+   "aliases": []
+  },
+  {
+   "id": "mixolydian",
+   "name": "Mixolydian",
+   "formula": [
+    "P1",
+    "M2",
+    "M3",
+    "P4",
+    "P5",
+    "M6",
+    "m7"
+   ],
+   "family": "mode",
+   "aliases": []
+  },
+  {
+   "id": "locrian",
+   "name": "Locrian",
+   "formula": [
+    "P1",
+    "m2",
+    "m3",
+    "P4",
+    "d5",
+    "m6",
+    "m7"
+   ],
+   "family": "mode",
+   "aliases": []
+  },
+  {
+   "id": "harmonic_major",
+   "name": "Harmonic major",
+   "formula": [
+    "P1",
+    "M2",
+    "M3",
+    "P4",
+    "P5",
+    "m6",
+    "M7"
+   ],
+   "family": "major",
+   "aliases": []
+  },
+  {
+   "id": "major_pentatonic",
+   "name": "Major pentatonic",
+   "formula": [
+    "P1",
+    "M2",
+    "M3",
+    "P5",
+    "M6"
+   ],
+   "family": "pentatonic",
+   "aliases": []
+  },
+  {
+   "id": "minor_pentatonic",
+   "name": "Minor pentatonic",
+   "formula": [
+    "P1",
+    "m3",
+    "P4",
+    "P5",
+    "m7"
+   ],
+   "family": "pentatonic",
+   "aliases": []
+  },
+  {
+   "id": "blues",
+   "name": "Blues (minor)",
+   "formula": [
+    "P1",
+    "m3",
+    "P4",
+    "d5",
+    "P5",
+    "m7"
+   ],
+   "family": "blues",
+   "aliases": [
+    "minor_blues"
+   ]
+  },
+  {
+   "id": "major_blues",
+   "name": "Blues (major)",
+   "formula": [
+    "P1",
+    "M2",
+    "m3",
+    "M3",
+    "P5",
+    "M6"
+   ],
+   "family": "blues",
+   "aliases": []
+  },
+  {
+   "id": "chromatic",
+   "name": "Chromatic",
+   "formula": [
+    "P1",
+    "m2",
+    "M2",
+    "m3",
+    "M3",
+    "P4",
+    "A4",
+    "P5",
+    "m6",
+    "M6",
+    "m7",
+    "M7"
+   ],
+   "family": "symmetric",
+   "aliases": []
+  },
+  {
+   "id": "whole_tone",
+   "name": "Whole tone",
+   "formula": [
+    "P1",
+    "M2",
+    "M3",
+    "A4",
+    "A5",
+    "m7"
+   ],
+   "family": "symmetric",
+   "aliases": []
+  },
+  {
+   "id": "diminished_whole_half",
+   "name": "Diminished (whole-half)",
+   "formula": [
+    "P1",
+    "M2",
+    "m3",
+    "P4",
+    "d5",
+    "m6",
+    "M6",
+    "M7"
+   ],
+   "family": "symmetric",
+   "aliases": [
+    "octatonic_wh"
+   ]
+  },
+  {
+   "id": "diminished_half_whole",
+   "name": "Diminished (half-whole)",
+   "formula": [
+    "P1",
+    "m2",
+    "m3",
+    "M3",
+    "A4",
+    "P5",
+    "M6",
+    "m7"
+   ],
+   "family": "symmetric",
+   "aliases": [
+    "octatonic_hw",
+    "dominant_diminished"
+   ]
+  }
+ ]
+}

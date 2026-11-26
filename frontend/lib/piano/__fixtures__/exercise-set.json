@@ -1,0 +1,33 @@
+{
+  "exercises": [
+    {
+      "id": "v1:triad_identify:beginner:3",
+      "kind": "triad_identify",
+      "difficulty": "beginner",
+      "seed": 3,
+      "topic": "triads",
+      "prompt": "Name this chord (notes: C E G).",
+      "answer_format": "text",
+      "answer_help": "A chord symbol such as Dm7, Bb or Cmaj7/E",
+      "choices": [],
+      "show": [
+        48,
+        52,
+        55
+      ],
+      "play": [
+        {
+          "notes": [
+            48,
+            52,
+            55
+          ],
+          "start": 0.0,
+          "duration": 3.0
+        }
+      ],
+      "tempo": 80,
+      "hint": "Look for notes a third apart, stacked; the bottom of the stack is the root."
+    }
+  ]
+}

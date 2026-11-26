@@ -1,0 +1,12 @@
+{
+  "status": "no_reliable_label",
+  "reason": "No supported chord type explains all 3 pitch classes.",
+  "bass": null,
+  "pitch_classes": [
+    0,
+    1,
+    2
+  ],
+  "candidates": [],
+  "score_meaning": "Scores rank the readings against each other. They are not probabilities."
+}

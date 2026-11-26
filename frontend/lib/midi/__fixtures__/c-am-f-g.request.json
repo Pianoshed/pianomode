@@ -1,0 +1,290 @@
+{
+ "ppq": 480,
+ "events": [
+  {
+   "tick": 0,
+   "kind": "note_on",
+   "note": 60,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 1900,
+   "kind": "note_off",
+   "note": 60,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 0,
+   "kind": "note_on",
+   "note": 64,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 1900,
+   "kind": "note_off",
+   "note": 64,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 0,
+   "kind": "note_on",
+   "note": 67,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 1900,
+   "kind": "note_off",
+   "note": 67,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 0,
+   "kind": "note_on",
+   "note": 48,
+   "velocity": 90,
+   "channel": 0,
+   "track": 2
+  },
+  {
+   "tick": 1900,
+   "kind": "note_off",
+   "note": 48,
+   "velocity": 0,
+   "channel": 0,
+   "track": 2
+  },
+  {
+   "tick": 1920,
+   "kind": "note_on",
+   "note": 57,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 3820,
+   "kind": "note_off",
+   "note": 57,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 1920,
+   "kind": "note_on",
+   "note": 60,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 3820,
+   "kind": "note_off",
+   "note": 60,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 1920,
+   "kind": "note_on",
+   "note": 64,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 3820,
+   "kind": "note_off",
+   "note": 64,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 1920,
+   "kind": "note_on",
+   "note": 45,
+   "velocity": 90,
+   "channel": 0,
+   "track": 2
+  },
+  {
+   "tick": 3820,
+   "kind": "note_off",
+   "note": 45,
+   "velocity": 0,
+   "channel": 0,
+   "track": 2
+  },
+  {
+   "tick": 3840,
+   "kind": "note_on",
+   "note": 60,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 5740,
+   "kind": "note_off",
+   "note": 60,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 3840,
+   "kind": "note_on",
+   "note": 65,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 5740,
+   "kind": "note_off",
+   "note": 65,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 3840,
+   "kind": "note_on",
+   "note": 69,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 5740,
+   "kind": "note_off",
+   "note": 69,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 3840,
+   "kind": "note_on",
+   "note": 41,
+   "velocity": 90,
+   "channel": 0,
+   "track": 2
+  },
+  {
+   "tick": 5740,
+   "kind": "note_off",
+   "note": 41,
+   "velocity": 0,
+   "channel": 0,
+   "track": 2
+  },
+  {
+   "tick": 5760,
+   "kind": "note_on",
+   "note": 59,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 7660,
+   "kind": "note_off",
+   "note": 59,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 5760,
+   "kind": "note_on",
+   "note": 62,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 7660,
+   "kind": "note_off",
+   "note": 62,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 5760,
+   "kind": "note_on",
+   "note": 65,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 7660,
+   "kind": "note_off",
+   "note": 65,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 5760,
+   "kind": "note_on",
+   "note": 67,
+   "velocity": 80,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 7660,
+   "kind": "note_off",
+   "note": 67,
+   "velocity": 0,
+   "channel": 0,
+   "track": 1
+  },
+  {
+   "tick": 5760,
+   "kind": "note_on",
+   "note": 43,
+   "velocity": 90,
+   "channel": 0,
+   "track": 2
+  },
+  {
+   "tick": 7660,
+   "kind": "note_off",
+   "note": 43,
+   "velocity": 0,
+   "channel": 0,
+   "track": 2
+  }
+ ],
+ "tempo_changes": [
+  {
+   "tick": 0,
+   "bpm": 100
+  }
+ ],
+ "time_signatures": [
+  {
+   "tick": 0,
+   "numerator": 4,
+   "denominator": 4
+  }
+ ]
+}
