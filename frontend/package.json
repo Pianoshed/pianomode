@@ -16,7 +16,7 @@
     "@fontsource-variable/schibsted-grotesk": "5.1.1"
   },
   "devDependencies": {
-    "@types/node": "22.10.2",
+    "@types/node": "26.6.6",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
     "autoprefixer": "10.4.20",
