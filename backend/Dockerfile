@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg libsndfi
     && mkdir -p /data/storage && chown app /data/storage
 WORKDIR /srv
 COPY requirements.txt .
-RUN pip install --no-cache-dir --require-hashes -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 COPY --chown=app:app . .
 # Never run as root inside the container.
 USER app
