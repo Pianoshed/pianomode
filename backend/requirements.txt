@@ -195,5 +195,5 @@ websockets==17.4
     # via
     #   uvicorn
 
-
+psycopg2-binary
 
